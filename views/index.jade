@@ -1,0 +1,104 @@
+!!! 5
+//if lt IE 7
+  <html class="no-js lt-ie9 lt-ie8 lt-ie7">
+//if IE 7
+  <html class="no-js lt-ie9 lt-ie8">
+//if IE 8
+  <html class="no-js lt-ie9">
+//[if gt IE 8]><!
+html(class='no-js')
+  //<![endif]
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
+    title GnA
+    meta(name='description', content='')
+    meta(name='viewport', content='width=device-width')
+    link(rel='stylesheet', href='stylesheets/normalize.min.css')
+    link(rel='stylesheet', href='stylesheets/main.css')
+    script(src='javascripts/vendor/modernizr-2.6.2.min.js')
+  body
+    //if lt IE 7
+      p.chromeframe.
+        You are using an <strong>outdated</strong> browser.
+        Please <a href="http://browsehappy.com/">upgrade your browser</a> or
+        <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a>
+        to improve your experience.
+
+    header
+      img.logo(src='images/GnA.png')
+      #home
+        h1 Games 'n Apps
+        p Games and application developmet, from the cloud to your mobile.
+        img(src='images/header.png')
+        .clearfix
+    content
+      #menu
+        a(href='#home') Home
+        span |
+        a(href='#productsandservices') Products and Services
+        span |
+        a(href='#aboutus') About Us
+        span |
+        a(href='#contact') Contact
+        span |
+        a(href='http://www.blogspot.com') Blog
+      #productsandservices
+        h2 Products and Services
+        .line
+        .service
+          div
+            h3 Games development
+            p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam justo enim, luctus in sagittis sit amet, molestie quis nulla. Proin sit amet gravida libero. Cras viverra, nulla non tincidunt mattis, ipsum risus sodales nunc, et pharetra augue justo vitae ipsum. Morbi euismod elementum tempus. Praesent malesuada augue et felis commodo in porttitor dolor vestibulum. Aenean ultricies elementum lacus tincidunt semper. In hac habitasse platea dictumst. Vivamus metus velit, luctus vitae porta blandit, dictum id odio.
+          img(src='images/game.png')
+        .service
+          div
+            h3 Mobile apps
+            p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam justo enim, luctus in sagittis sit amet, molestie quis nulla. Proin sit amet gravida libero. Cras viverra, nulla non tincidunt mattis, ipsum risus sodales nunc, et pharetra augue justo vitae ipsum. Morbi euismod elementum tempus. Praesent malesuada augue et felis commodo in porttitor dolor vestibulum. Aenean ultricies elementum lacus tincidunt semper. In hac habitasse platea dictumst. Vivamus metus velit, luctus vitae porta blandit, dictum id odio.
+          img(src='images/apps.png')
+        .service
+          div
+            h3 Software as a Service
+            p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam justo enim, luctus in sagittis sit amet, molestie quis nulla. Proin sit amet gravida libero. Cras viverra, nulla non tincidunt mattis, ipsum risus sodales nunc, et pharetra augue justo vitae ipsum. Morbi euismod elementum tempus. Praesent malesuada augue et felis commodo in porttitor dolor vestibulum. Aenean ultricies elementum lacus tincidunt semper. In hac habitasse platea dictumst. Vivamus metus velit, luctus vitae porta blandit, dictum id odio.
+          img(src='images/sas.png')
+      #aboutus
+        h2 More about Us
+        img.wing(src='images/wing.png')
+        .line
+        p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam justo enim, luctus in sagittis sit amet, molestie quis nulla. Proin sit amet gravida libero. Cras viverra, nulla non tincidunt mattis, ipsum risus sodales nunc, et pharetra augue justo vitae ipsum. Morbi euismod elementum tempus. Praesent malesuada augue et felis commodo in porttitor dolor vestibulum. Aenean ultricies elementum lacus tincidunt semper. In hac habitasse platea dictumst. Vivamus metus velit, luctus vitae porta blandit, dictum id odio.
+        #logos
+          img.html5(src='images/html5.png')
+          img.css3(src='images/css3.png')
+          img.javascript(src='images/javascript.png')
+          img.ios(src='images/ios.png')
+          img.java(src='images/java.png')
+          img.dotnet(src='images/dotnet.png')
+        p loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum.
+      #contact
+        h2 Contact us and let us know how can we help you
+        .line
+        aside
+          p loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum.
+          img(src='images/linkedIn.png')
+          img(src='images/twitter.png')
+          img(src='images/facebook.png')
+        form
+          input(type='text', placeholder='Name')
+          input(type='email', placeholder='Email')
+          input(type='text', placeholder='Company')
+          textarea(rows='4', placeholder='Message')
+          input(type='submit', value='Send')
+        .clearfix
+    footer
+      h3 GnA 2013
+
+    script(src='//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js')
+    script window.jQuery || document.write('<script src="javascripts/vendor/jquery-1.9.1.min.js"><\\/script>')
+    script(src='javascripts/plugins.js')
+    script(src='javascripts/main.js')
+ 
+    script
+      var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+      (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+      g.src='//www.google-analytics.com/ga.js';
+      s.parentNode.insertBefore(g,s)}(document,'script'));
