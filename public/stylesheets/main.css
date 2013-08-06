@@ -203,6 +203,9 @@ content #contact{
 content #contact aside img{
     max-width: 100px;
 }
+content #contact aside img.fb{
+    max-width: 55px;
+}
 content #contact input,
 content #contact textarea{
     width: 100%;
@@ -216,7 +219,7 @@ content #contact textarea{
     body{
         margin-left: auto;
         margin-right: auto;
-        width: 920px;
+        width: 100%;
         padding-top: 15px;
     }
     header #home{
@@ -246,9 +249,11 @@ content #contact textarea{
     }
 }
 
-
-
-
+@media screen and (min-width: 920px) {
+    body{
+        width: 920px;
+    }
+}
 
 
 

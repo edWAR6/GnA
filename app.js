@@ -7,7 +7,8 @@
 var express = require('express'),
   routes = require('./routes'),
   http = require('http'),
-  path = require('path');
+  path = require('path'),
+  contact = require('./routes/contact');
 
 var app = express(),
   store = new express.session.MemoryStore;
@@ -33,6 +34,7 @@ if ('development' == app.get('env')) {
 
 app.get('/', routes.index);
 app.get('/404', routes.notfound);
+app.post('/contact', contact.sendemail);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('GnA listening on port ' + app.get('port'));

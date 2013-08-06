@@ -49,23 +49,28 @@ html(class='no-js')
         .service
           div
             h3 Games development
-            p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam justo enim, luctus in sagittis sit amet, molestie quis nulla. Proin sit amet gravida libero. Cras viverra, nulla non tincidunt mattis, ipsum risus sodales nunc, et pharetra augue justo vitae ipsum. Morbi euismod elementum tempus. Praesent malesuada augue et felis commodo in porttitor dolor vestibulum. Aenean ultricies elementum lacus tincidunt semper. In hac habitasse platea dictumst. Vivamus metus velit, luctus vitae porta blandit, dictum id odio.
+            p We consider ourselves a entrepreneur company. And game development is one of our main goals.
+            p GnA is a new company formed by experienced people in different areas of the software world, one of the areas is the creation of video games. Our experience is based in multimedia and entertainment software projects that gave us the experience to start producing games in the video game market.
           img(src='images/game.png')
         .service
           div
             h3 Mobile apps
-            p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam justo enim, luctus in sagittis sit amet, molestie quis nulla. Proin sit amet gravida libero. Cras viverra, nulla non tincidunt mattis, ipsum risus sodales nunc, et pharetra augue justo vitae ipsum. Morbi euismod elementum tempus. Praesent malesuada augue et felis commodo in porttitor dolor vestibulum. Aenean ultricies elementum lacus tincidunt semper. In hac habitasse platea dictumst. Vivamus metus velit, luctus vitae porta blandit, dictum id odio.
+            p The world is changing and so the way to do business. Now there are more mobile devices than computers in the world. This is the reason that mobile development is one of our main purposes.
+            p We have the expertice and the knowledge to build apps for any device out there, because if we haven't done it yet, we will.
           img(src='images/apps.png')
         .service
           div
             h3 Software as a Service
-            p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam justo enim, luctus in sagittis sit amet, molestie quis nulla. Proin sit amet gravida libero. Cras viverra, nulla non tincidunt mattis, ipsum risus sodales nunc, et pharetra augue justo vitae ipsum. Morbi euismod elementum tempus. Praesent malesuada augue et felis commodo in porttitor dolor vestibulum. Aenean ultricies elementum lacus tincidunt semper. In hac habitasse platea dictumst. Vivamus metus velit, luctus vitae porta blandit, dictum id odio.
+            p We are good at using our creativity and knowledge to build great cloud solutions for our customers.
+            p We also believe that cloud computing is the future way to do business. And we are doing it now.
+            p Having our own services out there is an advantage that give our customers the confidence they need.
           img(src='images/sas.png')
       #aboutus
         h2 More about Us
-        img.wing(src='images/wing.png')
         .line
-        p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam justo enim, luctus in sagittis sit amet, molestie quis nulla. Proin sit amet gravida libero. Cras viverra, nulla non tincidunt mattis, ipsum risus sodales nunc, et pharetra augue justo vitae ipsum. Morbi euismod elementum tempus. Praesent malesuada augue et felis commodo in porttitor dolor vestibulum. Aenean ultricies elementum lacus tincidunt semper. In hac habitasse platea dictumst. Vivamus metus velit, luctus vitae porta blandit, dictum id odio.
+        p We have more than 10 years of experience in software development and a huge background in business.
+        p GnA started in 2012 as a mobile apps provider for some companies, soon the love for video games and entertainment begin to open the right doors for us. Now games and applications are our main area of business.
+        p Our team is composed by a group of young people, developers, designers and artists. Together we can create and give life to new ideas and project that will someday turn us one of the biggest software creators in the world.
         #logos
           img.html5(src='images/html5.png')
           img.css3(src='images/css3.png')
@@ -73,21 +78,23 @@ html(class='no-js')
           img.ios(src='images/ios.png')
           img.java(src='images/java.png')
           img.dotnet(src='images/dotnet.png')
-        p loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum.
+        p We can assure you the amount of knowledge in GnA will grow every day!
       #contact
-        h2 Contact us and let us know how can we help you
+        h2 Contact us and let us know how we can help you
         .line
         aside
-          p loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum.
-          img(src='images/linkedIn.png')
+          p Learn more from us in the social media links.
+          img(src='images/LinkedIn.png')
           img(src='images/twitter.png')
-          img(src='images/facebook.png')
-        form
-          input(type='text', placeholder='Name')
-          input(type='email', placeholder='Email')
-          input(type='text', placeholder='Company')
-          textarea(rows='4', placeholder='Message')
+          a(href='https://www.facebook.com/gnastudio', target='_blank')
+            img(src='images/facebook.png').fb
+        form(method='POST', action='/contact')#form
+          input#name(type='text', placeholder='Name', required, name='contact[name]')
+          input#email(type='email', placeholder='Email', required, name='contact[email]')
+          input#company(type='text', placeholder='Company', required, name='contact[company]')
+          textarea#message(rows='4', placeholder='Message', required, name='contact[message]')
           input(type='submit', value='Send')
+          p#servermessage
         .clearfix
     footer
       h3 GnA 2013
