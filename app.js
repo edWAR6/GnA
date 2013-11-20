@@ -3,12 +3,11 @@
  * GnA server
  */
 
-// Module dependencies.
+// module dependencies.
 var express = require('express'),
   routes = require('./routes'),
   http = require('http'),
-  path = require('path'),
-  contact = require('./routes/contact');
+  path = require('path');
 
 var app = express(),
   store = new express.session.MemoryStore;
@@ -32,9 +31,10 @@ if ('development' == app.get('env')) {
   app.use(express.errorHandler());
 };
 
+// routing
 app.get('/', routes.index);
 app.get('/404', routes.notfound);
-app.post('/contact', contact.sendemail);
+app.get('/android', routes.android);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('GnA listening on port ' + app.get('port'));

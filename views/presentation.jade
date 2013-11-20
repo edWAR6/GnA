@@ -1,0 +1,38 @@
+//- GnA Eduardo Oviedo Blanco
+//- eduardo.oviedo@gnastudio.net
+
+doctype 5
+html
+  head
+    block head
+      meta(name='viewport', content='width=device-width, initial-scale=1.0, user-scalable=yes')
+      title GnA
+      link(rel='stylesheet', href='stylesheets/normalize.min.css')
+      link(rel='stylesheet', href='stylesheets/presentation.css')
+      link(rel='stylesheet', href='http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css')
+      script(src='javascripts/vendor/modernizr-2.6.2.min.js')
+  body
+    block body
+      //if lt IE 7
+        p.chromeframe.
+          You are using an <strong>outdated</strong> browser.
+          Please <a href="http://browsehappy.com/">upgrade your browser</a> or
+          <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a>
+          to improve your experience.
+
+      header.layout
+        img(src='images/GnA-black.png')
+        nav
+          button.previus ⇽
+          input(type='number', min='1', max='999', value='1')
+          button.next ⇾
+      content.layout
+        block content
+      footer.layout
+        h4 GnA 2013
+
+      script(src='http://code.jquery.com/jquery-1.9.1.js')
+      script(src='http://code.jquery.com/ui/1.10.3/jquery-ui.js')
+      script window.jQuery || document.write('<script src="javascripts/vendor/jquery-1.9.1.min.js"><\\/script>')
+      script(src='javascripts/plugins.js')
+      script(src='javascripts/presentation.js')

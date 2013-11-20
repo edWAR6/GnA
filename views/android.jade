@@ -1,0 +1,1233 @@
+//- GnA Eduardo Oviedo Blanco
+//- eduardo.oviedo@gnastudio.net
+
+extends presentation
+
+block append head
+  link(rel='stylesheet', href='stylesheets/android.css')
+  link(rel='stylesheet', type='text/css', href='http://fonts.googleapis.com/css?family=Roboto:400,700')
+
+block content
+  section.slide.s1.current
+    header
+      h1 Desarrollo de aplicaciones Android
+    article
+      img(src='images/android/android-devices.png').devices
+      .column
+        h2 Eduardo Oviedo Blanco
+        h3 eduardo.oviedo@gnastudio.net
+        p CEO y Director de Games 'n Apps
+        p Más de 10 años de experiencia en desarrollo de software.
+        p Experiencia en creación de aplicaciones para diferentes plataformas:
+        ul
+          li Android
+          li iOS
+          li Windows 8
+          li Blackberry, web os, etc.
+      .clearfix
+    footer
+      img(src='images/android/logo.png').logo
+  section.slide.s2
+    header
+      img(src='images/android/android.png').devices
+      h1 Contenido del curso
+    article
+      div
+        .column
+          h3 Introducción al desarrollo móvil.
+        .column
+          ul
+            li Transferencia del conocimiento.
+            li Cómo crear un proyecto.
+            li Ejecución de aplicaciones.
+            li Interfaz de usuario.
+            li Actividades.
+      div
+        .column
+          h3 Ciclo de vida de una aplicación.
+        .column
+          ul
+            li Iniciar actividades.
+            li Pausar y resumir actividades.
+            li Detener y reiniciar actividades.
+            li Recrear una actividad.
+      div
+        .column
+          h3 Soporte de dispositivos.
+        .column
+          ul
+            li Soporte de diferentes lenguajes.
+            li Soporte de diferentes pantallas.
+            li Soporte de diferentes versiones.
+      div
+        .column
+          h3 Construcción de interfaces de usuario dinámicas.
+        .column
+          ul
+            li Uso de la librería de soporte.
+            li Construcción de fragmentos.
+            li Flexibilidad de la interfaz de usuario.
+            li Comunicación entre fragmentos.
+      div
+        .column
+          h3 Datos.
+        .column
+          ul
+            li Guardado de datos.
+            li Guardado de archivos.
+            li Bases de datos SQL.
+      div
+        .column
+          h3 Interacción entre aplicaciones.
+        .column
+          ul
+            li Redireccionar al usuario.
+            li Obtención de resultados.
+            li Compartir actividades.
+      div
+        .column
+          h3 Compartir contenido.
+        .column
+          ul
+            li Enviar contenido a otras aplicaciones.
+            li Recibir contenido de otras aplicaciones.
+            li Agregando acciones de compartir.
+      div
+        .column
+          h3 Google Play.
+        .column
+          ul
+            li Historia de los “market places”.
+            li Introducción a Google Play.
+            li Manual para la publicación de una aplicación.
+    footer
+      img(src='images/android/ulatina.jpg')
+      img(src='images/GnA.png')
+  section.slide.s3
+    header
+      img(src='images/android/android.png').devices
+      h1 Transferencia del conocimiento
+    article
+      h2 Una app debe de...
+      ul
+        li ¡Asombrarme!
+        li Simplificarme la vida
+        li Extender mis capacidades
+      img(src='images/android/apps.jpg')
+      h2 ¿Cual es su app favorita o la que más usa?
+      p ...
+      hr
+      img(src='images/android/calculator.png')
+      hr
+      h2 ¿Cómo asombrar al usuario?
+      .row
+        .column
+          p En la medida de lo posible use sonidos, animaciones, transparencias, etc.
+        .column
+          img(src='images/android/delight1.png')
+      .row
+        .column
+          img(src='images/android/principles_real_objects.png')
+        .column
+          p Objetos comunes y corrientes son mejores, más predecibles y más bonitos.
+      .row
+        .column
+          p Personalización.
+        .column
+          img(src='images/android/principles_make_it_mine.png')
+      .row
+        .column
+          img(src='images/android/principles_get_to_know_me.png')
+        .column
+          p Reconozca al usuario y recuerde sus preferencias.
+      h2 ¿Cómo le simplifico la vida al usuario?
+      .row
+        .column
+          p Simplifique. No hacen faltas largas descripciones o textos grandes.
+        .column
+          img(src='images/android/principles_keep_it_brief.png')
+      .row
+        .column
+          img(src='images/android/principles_pictures.png')
+        .column
+          p Use imágenes y no palabras.
+      .row
+        .column
+          p Anticípese a la elección, pero deje que el usuario decida.
+        .column
+          img(src='images/android/principles_decide_for_me.png')
+      .row
+        .column
+          img(src='images/android/principles_information_when_need_it.png')
+        .column
+          p No sobrecargue al usuario.
+      .row
+        .column
+          p No deje que el usuario se pierda.
+        .column
+          img(src='images/android/principles_navigation.png')
+      .row
+        .column
+          img(src='images/android/principles_never_lose_stuff.png')
+        .column
+          p Consistencia entre dispositivos.
+      .row
+        .column
+          p Use funcionalidades consistentes. Si se ven similares, deben funcionar de manera similar.
+        .column
+          img(src='images/android/principles_looks_same.png')
+      .row
+        .column
+          img(src='images/android/principles_important_interruption.png')
+        .column
+          p Interrumpa al usuario solo si es importante.
+      h2 ¿Cómo puedo extender las capacidades del usuario?
+      .row
+        .column
+          p Memoria muscular.
+        .column
+          img(src='images/android/principles_tricks.png')
+      .row
+        .column
+          img(src='images/android/principles_error.png')
+        .column
+          p Logre que el usuario se sienta inteligente.
+      .row
+        .column
+          p Dele recompenzas al usuario. Tareas pequeñas con retroalimentación son gratificantes.
+        .column
+          img(src='images/android/principles_sprinkle_encouragement.png')
+      .row
+        .column
+          img(src='images/android/principles_heavy_lifting.png')
+        .column
+          p Logre que el usuario se crea experto.
+      .row
+        .column
+          p Cree las funcionalidades más importantes fáciles de usar y rápidas de encontrar.
+        .column
+          img(src='images/android/principles_make_important_fast.png')
+    footer
+      img(src='images/android/ulatina.jpg')
+      img(src='images/GnA.png')
+  section.slide.s4
+    header
+      img(src='images/android/android.png').devices
+      h1 Interfaz del usuario
+    article
+      .column3
+        h2 Home
+        img(src='images/android/ui_overview_home_screen.png')
+      .column3
+        h2 Apps
+        img(src='images/android/ui_overview_all_apps.png')
+      .column3
+        h2 Recientes
+        img(src='images/android/ui_overview_recents.png')
+      .clearfix
+      hr
+      h2 Barras del sistema
+      img(src='images/android/ui_overview_system_ui.png')
+      hr
+      h2 Notificaciones
+      img(src='images/android/notifications_dismiss.png')
+      hr
+      h2 Interfaz de una app
+      img(src='images/android/ui_overview_app_ui.png')
+    footer
+      img(src='images/android/ulatina.jpg')
+      img(src='images/GnA.png')
+  section.slide.s5
+    header
+      img(src='images/android/android.png').devices
+      h1 Dispositivos y sus pantallas
+    article
+      img(src='images/android/devices_displays_main.png')
+      h2 Una app debe de:
+      ul
+        li Ser flexible
+        li Optimizar los espacios
+        li Funcionar en cualquier tamaño
+      img(src='images/android/devices_displays_density@2x.png')
+    footer
+      img(src='images/android/ulatina.jpg')
+      img(src='images/GnA.png')
+  section.slide.s6
+    header
+      img(src='images/android/android.png').devices
+      h1 Retroalimentación visual
+    article
+      .row
+        .column
+          p Efectos táctiles.
+        .column
+          img(src='images/android/touch_feedback_reaction_response.png')
+      .row
+        .column
+          img(src='images/android/touch_feedback_states.png')
+        .column
+          p Estados.
+      .row
+        .column
+          p Comunicación.
+        .column
+          img(src='images/android/touch_feedback_manipulation.png')
+      .row
+        .column
+          img(src='images/android/touch_feedback_communication.png')
+        .column
+          p Límites.
+    footer
+      img(src='images/android/ulatina.jpg')
+      img(src='images/GnA.png')
+  section.slide.s7
+    header
+      img(src='images/android/android.png').devices
+      h1 Otros detalles importantes
+    article
+      h2 Medidas
+      .tip
+        span Tip:
+        p Existen algunas herramientas en linea para esto.
+        a(href='http://labs.rampinteractive.co.uk/android_dp_px_calculator') Calculadora de dp -> px
+      ul
+        li dpi significa "Dots Per Inch", puntos por pulgada.
+        li dp significa "Density-independent pixels", pixeles independientemente de la densidad.
+        li LDPI: Low density, densidad baja, equivale a 120dpi.
+        li DPI: Medium density, densidad media, equivale a 160dpi.
+        li HDPI: High density, densidad alta, equivale a 240dpi.
+        li XHDPI: Extra-high density, densidad extra alta, equivale a 320dpi.
+        li XXHDPI: Extra-extra-high density, densidad extra extra alta, equivale a 480dpi.
+        li 1dp es igual a 1px en un dispositivo de 160dpi, osea un MDPI.
+      .clearfix
+      hr
+      h2 Métricas
+      p Menos de 600dp es considerado un teléfono, más o igual a 600dp un tablet.
+      .center
+        img(src='images/android/metrics_diagram.png')
+        img(src='images/android/metrics_closeup.png')
+        img(src='images/android/metrics_forms.png')
+      hr
+      h2 Tipografía
+      .center
+        img(src='images/android/typography_main.png')
+      hr
+      h2 Colores
+      .center
+        img(src='images/android/color_spectrum.png')
+      hr
+      h2 Material adicional
+      .row
+        .column
+          h3 Fuentes
+        .column
+          a(href='http://developer.android.com/downloads/design/roboto-1.100141.zip') Roboto
+          br
+          a(href='http://developer.android.com/downloads/design/Roboto_Specimen_Book_20111129.pdf') Libro
+          hr
+      .row
+        .column
+          h3 Colores
+        .column
+          a(href='http://developer.android.com/downloads/design/Android_Design_Color_Swatches_20120229.zip') Herramienta de diseño
+          hr
+      .row
+        h3 Video de diseño
+        .center
+          <iframe width="560" height="315" src="//www.youtube.com/embed/2NL_83EG0no?rel=0" frameborder="0" allowfullscreen></iframe>
+        hr
+      .row
+        h3 Navegación
+        .center
+          <iframe width="560" height="315" src="//www.youtube.com/embed/XwGHJJYBs0Q?rel=0" frameborder="0" allowfullscreen></iframe>
+        hr
+      .row
+        h3 ¿Cómo iniciar?
+        .center
+          <iframe width="560" height="315" src="//www.youtube.com/embed/2jCVmfCse1E?rel=0" frameborder="0" allowfullscreen></iframe>
+        hr
+    footer
+      img(src='images/android/ulatina.jpg')
+      img(src='images/GnA.png')
+  section.slide.s8
+    header
+      img(src='images/android/android.png').devices
+      h1 Preparando el ambiente de desarrollo
+    article
+      h2 Requisitos
+        ul
+          li Eclipse
+          li Android SDK (software development kit)
+          li ADT (Android development tools)
+          li Android platform
+          li Android platforms-tools
+          li Android system image
+        .tip
+          p Todo puede ser descargado en un solo paquete.
+          .row
+            .column
+              span Windows 32-bit
+            .column
+              a(href='http://dl.google.com/android/adt/adt-bundle-windows-x86-20130917.zip') adt-bundle-windows-x86-20130917.zip
+          .row
+            .column
+              span Windows 64-bit
+            .column
+              a(href='http://dl.google.com/android/adt/adt-bundle-windows-x86_64-20130917.zip') adt-bundle-windows-x86_64-20130917.zip
+          .row
+            .column
+              span Mac OS X 64-bit
+            .column
+              a(href='http://dl.google.com/android/adt/adt-bundle-mac-x86_64-20130917.zip') adt-bundle-mac-x86_64-20130917.zip
+          .row
+            .column
+              span Linux 32-bit
+            .column
+              a(href='http://dl.google.com/android/adt/adt-bundle-linux-x86-20130917.zip') adt-bundle-linux-x86-20130917.zip
+          .row
+            .column
+              span Linux 64-bit
+            .column
+              a(href='http://dl.google.com/android/adt/adt-bundle-linux-x86_64-20130917.zip') adt-bundle-linux-x86_64-20130917.zip
+    footer
+      img(src='images/android/ulatina.jpg')
+      img(src='images/GnA.png')
+  section.slide.s9
+    header
+      img(src='images/android/android.png').devices
+      h1 Creando un proyecto
+    article
+      ol
+        li Ejecute Eclipse, desde el zip descomprimido / Eclipse.
+        li 
+          |Seleccione 
+          b New 
+          |en el toolbar. 
+          img(src='images/android/eclipse-new.png').inline
+        li
+          |Seleccione el folder 
+          b Android
+          | y seleccione 
+          b Android Application Project.
+        li Complete el formulario.
+          ul
+            li
+              b Application Name
+              | es el nombre de su aplicación. El mismo que ven los usuarios.
+            li
+              b Project Name
+              |  es el nombre del proyecto en el workspace de Eclipse.
+            li
+              b Package Name
+              |  es el nombre del namespace. Debe ser único.
+            li
+              b Minimum Required SDK
+              |  es la mínima versión de Android que soportará su app.
+            li
+              b Target SDK
+              |  es la versión más alta que soportará su app.
+            li
+              b Compile With
+              |  es el sdk que usará para compilar. Seleccione la mayor disponible en su ambiente de desarrollo.
+            li
+              b Theme
+              |  es el tema visual para su app.
+        li En la siguiente pantalla deje todo por defecto y continue.
+        li En la siguietne pantalla se puede incidar el ícono de su app.
+        li
+          |Seleccione la actividad con la que iniciará su app. por ahora seleccione 
+          b BlankActivity
+        li En la pantalla final deje los valores por defecto.
+    footer
+      img(src='images/android/ulatina.jpg')
+      img(src='images/GnA.png')
+  section.slide.s10
+    header
+      img(src='images/android/android.png').devices
+      h1 Ejecutando mi aplicación
+    article
+      h2 Revisando el código
+      .center
+        ing(src='images/android/ss1.png')
+      hr
+      h2 Emulador
+      h3 AVD (Android Virtual Device)
+      ol
+        li
+          |Ejecute el 
+          b Android Virtual Device Manager
+          | :
+          ul
+            li
+              |Desde Eclipse de click en el botón 
+              img(src='images/android/apple-touch-icon-precomposed.png').inline
+              | .
+        .center
+          img(src='images/android/avds-config.png')
+        li
+          |En la ventana seleccione 
+          b New.
+        li Seleccione los detalles del emulador.
+        li
+          | Seleccione 
+          b Create AVD
+        li
+          |Seleccione el emulador y de click en 
+          b Start.
+        li Espere que el emulador esté funcionando y desbloqueelo.
+        li
+          |Desde Eclipse seleccione su proyecto y de click en 
+          img(src='images/android/eclipse-run.png')
+          |.
+        li
+          | En la ventana 
+          b Run as
+          |  seleccione 
+          b  Android Application.
+        li Eclipse instalará y ejecutará su aplicación en el emulador.
+      hr
+      h2 Dispositivo real
+      ol
+        li Conecte su teléfono o tablet a la computadora con un cable usb.
+        li Si necesita instalar el driver pregunte al instructor.
+        li
+          |Active 
+          b USB debugging
+          |  en su dispositivo.
+          ul
+            li
+              |De Android 3.2 o más viejos la opción está en 
+              b Settings > Applications > Development
+              | .
+            li
+              |De Android 4.0 o más nuevos la opción está en 
+              b Settings > Developer options
+              | .
+            li
+              |En Android 4.2 la opción está escondida, para lograr activarla, dirijase a 
+              b Settings > About phone
+              |  y de tap siete veces en 
+              b Build number
+              |  regrese y seleccione 
+              b Developer options
+              | .
+        li
+          |Desde Eclipse seleccione su proyecto y de click en 
+          img(src='images/android/eclipse-run.png')
+          |.
+        li
+          | En la ventana 
+          b Run as
+          |  seleccione 
+          b  Android Application.
+        li Eclipse instalará y ejecutará su aplicación en su dispositivo.
+    footer
+      img(src='images/android/ulatina.jpg')
+      img(src='images/GnA.png')
+  section.slide.s11
+    header
+      img(src='images/android/android.png').devices
+      h1 Construllendo la interfaz de usuario
+    article
+      h2 Objetos primarios
+      ul
+        li View
+        li ViewGroup
+      .center
+        img(src='images/android/viewgroup.png')
+      hr
+      h2 Creando una UI lineal
+      ol
+        li
+          |Abra el archivo 
+          i activity_main.xml
+          |  que se encuentra en 
+          i res/layout/
+          | .
+          li
+            |Borre el elemento 
+            i &lt;TextView>
+            |  y cambie el elemento 
+            i &lt;RelativeLayout>
+            |  por 
+            i &lt;LinearLayout>
+            | .
+          li
+            |Luego agregue el valor de 
+            i android:orientation
+            |  a 
+            i "horizontal"
+            | .
+          li Borre las propiedades sobrantes.
+          .center
+            img(src='images/android/ss2.png')
+      hr
+      h2 Agregando un campo de texto
+      ol
+        li
+          | Agregue un elemento 
+          i &lt;EditText>
+          |  dentro de 
+          i &lt;LinearLayout>
+          | .
+        li Las propiedades del campo de texto deben quedar como a continuación.
+        .center
+          img(src='images/android/ss3.png')
+        li Sobre las propiedades:
+          ul
+            li
+              i android:id
+              | : Identificador único.
+            li
+              i android:layout_width
+              |  y 
+              i android:layout_height
+              | : El tamaño del campo de texto sera tan grande como lo necesite, según su contenido.
+            li
+              i android:hint
+              | : Valor por defecto del campo de texto cuando está vacio.
+        li Después de este paso el proyecto no coompilará, hasta que se agreguen los recursos faltantes.
+      hr
+      h2
+        |Agregando los recursos de tipo 
+        i String
+      ol
+        li
+          | Por defecto el proyecto de Android incluye un archivo de recurso en 
+          i res/values/strings.xml
+          | .
+        li
+          | Agregue un nuevo string y llamelo 
+          i "edit_message"
+          | .
+        li Pongale por valor "Ingrese un mensaje".
+        li Si desea borre el "hello_world".
+        li
+          | Agregue otro string más con el valor "Enviar" y el nombre 
+          i "button_send"
+          | .
+        li El resultado debe verse así:
+        .center
+          img(src='images/android/ss4.png')
+      hr
+      h2 Práctica
+      p
+        | Haciendo uso de lo aprendido agregue un nuevo botón seguido del campo de texto. Su ancho y alto deben de acomodarse a su contenido. El valor (
+        i android:text
+        | ) debe de ser el que se especificó anteriormente ("Enviar").
+      hr
+      h2 Arreglando el ancho del campo de texto
+      .center
+        img(src='images/android/edittext_wrap.png')
+      ol
+        li
+          | Agregue la propiedad 
+          i android:layout_weight
+          |  al campo de texto con el valor 
+          i "1"
+          |  .
+        li
+          | A la propiedad de ancho, cambiele el valor a 
+          i "0dp"
+          | .
+        li Así debe verse el campo de texto con el nuevo cambio.
+        .center
+          img(src='images/android/edittext_gravity.png')
+        li Y así debe quedar el xml de la pantalla.
+        .center
+          img(src='images/android/ss5.png')
+        li Ejecute su app para que vea los cambios.
+    footer
+      img(src='images/android/ulatina.jpg')
+      img(src='images/GnA.png')
+  section.slide.s12
+    header
+      img(src='images/android/android.png').devices
+      h1 Interacción entre actividades
+    article
+      h2 Programando el botón de enviar
+      ol
+        li
+          | Abra el archivo 
+          i activity_main.xml
+          | .
+        li
+          | Agregue la propiedad 
+          i android:onClick
+          |  al botón.
+        .center
+          img(src='images/android/ss6.png')
+        li
+          | Abra la clase 
+          i MainActivity
+          | .
+        li
+          | Agregue el método 
+          i sendMessage
+          | .
+        .center
+          img(src='images/android/ss7.png')
+        li
+          | Si debe de, importe la clase 
+          i android.view.View
+      hr
+      h2
+        | Creando un 
+        i Intent
+      ol
+        li
+          | Dentro del método que creamos, cree una variable 
+          i Intent
+          |  para iniciar una actividad llamada 
+          i DisplayMessageActivity
+          | .
+        .center
+          img(src='images/android/ss8.png')
+        li
+          | Dentro del método use 
+          i findViewById()
+          |  para encontrar el objeto 
+          i EditText
+          |  y así agregarle su valor al 
+          i Intent
+          | .
+        .center
+          img(src='images/android/ss9.png')
+        li Importe las clases faltantes: 
+          ul
+            li
+              i android.content.Intent
+            li
+              i android.widget.EditText
+        li Cree la constante faltante al inicio de la clase de la actividad.
+        .center
+          img(src='images/android/ss10.png')
+      hr
+      h2 Llamando a una nueva actividad
+      ol
+        li
+          | Para lograr llamar una actividad se hace con 
+          i startActivity()
+          | .
+        li
+          | Agregue el uso de ese método y pásele por parámetro el 
+          i Intent
+          | .
+        .center
+          img(src='images/android/ss11.png')
+      hr
+      h2
+        | Creando la actividad 
+        i DisplayMessageActivity
+      ol
+        li
+          | Seleccione 
+          img(src='images/android/eclipse-new.png').inline
+          | .
+        li
+          | En la ventana seleccione 
+          b Android
+          |  y luego 
+          b Android Activity
+        li
+          | Seleccione 
+          b BlankActivity
+          | .
+        li Complete los detalles de la actividad.
+          ul
+            li
+              b Project
+              | : Seleccione su proyecto.
+            li
+              b Activity Name
+              | : Ingrese 
+              b DisplayMessageActivity
+              | .
+            li
+              b Layout Name
+              | : 
+              b activity_display_message
+              | .
+            li
+              b Title
+              | : "My mensaje".
+            li
+              b Hierarchial Parent
+              | : 
+              b com.example.myfirstapp.MainActivity
+              | .
+            li
+              b Navigation Type
+              | : deje el valor por defecto (none).
+        .center
+          img(src='images/android/adt-new-activity.png')
+        li
+          | Abra la clase 
+          b DisplayMessageActivity.java
+          | .
+        li
+          | Si desea puede borrar el método 
+          i onCreateOptionsMenu()
+          | .
+        li Modifique la clase para que sea como se ve a continuación.
+        .center
+          img(src='images/android/ss12.png')
+      hr
+      h2 Agregando la actividad al manifiesto
+      ol
+        li
+          | Abra el archivo 
+          b AndroidManifest.xml
+          | .
+        li
+          | Asegúrese de que existe un elemento del tipo 
+          i &lt;activity>
+          |  que corresponda a la actividad recién creada.
+        .center
+            img(src='images/android/ss13.png')
+        li Ejecute su app para ver el estado actual y cómo está funcionando.
+      hr
+      h2
+        | Reciviendo el 
+        b Intent
+      ol
+        li
+          | En la clase 
+          b DisplayMessageActivity
+          |  , edite el método 
+          i onCreate()
+          |  para extraer el mensaje.
+        .center
+          img(src='images/android/ss14.png')
+      hr
+      h2 Mostrando el mensaje
+      ol
+        li
+          | Finalmente para mostrar el mensaje, edite el método 
+          i onCreate()
+          |  para concluir con la programación.
+        .center
+          img(src='images/android/ss15.png') 
+        li Ejecute su app para verla funcionando y terminada.
+        .center
+          img(src='images/android/firstapp.png')
+    footer
+      img(src='images/android/ulatina.jpg')
+      img(src='images/GnA.png')
+  //- Day 2
+  section.slide.s13
+    header
+      img(src='images/android/android.png').devices
+      h1 Menú (Action Bar)
+    article
+      .center
+        img(src='images/android/actionbar@2x.png')
+      h2 Funciones:
+      ul
+        li Identidad.
+        li Ubicación.
+        li Acciones importantes y predecibles.
+        li Navegación.
+        li Comunicación.
+      hr
+      h2 Forma básica
+      p En su forma más básica muestra solamente el ícono y el nombre de la actividad.
+      .center
+        img(src='images/android/actionbar-basic.png')
+      p
+        | El uso del Action Bar depende de la versión mínima que soporte la aplicación, y será usable en temas que lo soporten, como 
+        i Theme.Holo
+        |  o algun otro que le herede.
+      h3 android:minSdkVersion >= 3.0
+      .center
+        img(src='images/android/ss16.png')
+      h3 android:minSdkVersion < 3.0 y > 2.1
+      ol
+        li
+          | Instalar 
+          b Android Support Library
+        .center
+          img(src='images/android/sdk-manager-support-libs.png')
+        li
+          | Extender 
+          b ActionBarActivity
+        .center
+          img(src='images/android/ss17.png')
+        li
+          | Use el tema 
+          b Theme.AppCompat
+        .center
+          img(src='images/android/ss18.png')
+        li La versión mínima soportada debe ser 7
+        .center
+          img(src='images/android/ss19.png')
+      hr
+      h2 Agregando opciones al Action Bar
+      .center
+        img(src='images/android/actionbar-actions.png')
+      h2 Práctica
+      p Cree un proyecto nuevo con las siguientes características.
+      ul
+        li
+          | Llámelo 
+          b Android Menu.
+        li El nivel mínimo requerido del SDK debe ser > 11 (3.0).
+        li
+          | El tema debe set de tipo 
+          b Holo.
+        li Debe contener una actividad con los valores predeterminados.
+      p
+        | La app debe de tener el siguiente menú. Para lograrlo edite el xml en el folder 
+        b res/menu
+        |.
+      .center
+        img(src='images/android/ss20.png')
+      p Progamaticamente agregue las acciones al menú y programe sus acciones. Siguiendo los siguientes pasos.
+      ol
+        li
+          | Sobrescriba el evento 
+          i onCreateOptionsMenu()
+          |  para agregar las acciones al menú.
+        .center
+          img(src='images/android/ss21.png')
+        li
+          | Sobrescriba el evento 
+          i onOptionsItemSelected()
+          |  para responder a las acciones.
+        .center
+          img(src='images/android/ss22.png')
+        li
+          | Debe programar también los procedimientos 
+          i openSearch()
+          |  y 
+          i openSettings()
+          | .
+        li Agregue dos actividades nuevas, una para la pantalla de buscar y otra para la de configuración. Asegurese de que las nuevas actividades tengan como padre a la actividad principal.
+        li
+          | Haciendo uso de lo aprendido en la clase anterior programe el 
+          i Intent
+          |  para la Navegación.
+        li
+          | Llame al método 
+          i setDisplayHomeAsUpEnabled()
+          |  en el método 
+          i onCreate()
+          |  para que el ícono de la app funcione como botón de atrás.
+        .center
+          img(src='images/android/ss23.png')
+
+    footer
+      img(src='images/android/ulatina.jpg')
+      img(src='images/GnA.png')
+  section.slide.s14
+    header
+      img(src='images/android/android.png').devices
+      h1 Estilos en el menú
+    article
+      h2 Theme.Holo
+      .center
+        img(src='images/android/actionbar-theme-dark@2x.png')
+        img(src='images/android/actionbar-theme-light-solid@2x.png')
+        img(src='images/android/ss24.png')
+      hr
+      h2 Overlay
+      p Se puede personalizar la barra de menú de direfentes maneras, una de ellas es con un efecto superposición.
+      .center
+        img(src='images/android/actionbar-overlay@2x.png')
+        img(src='images/android/ss25.png')
+    footer
+      img(src='images/android/ulatina.jpg')
+      img(src='images/GnA.png')
+  section.slide.s15
+    header
+      img(src='images/android/android.png').devices
+      h1 Soportando diferentes dispositivos
+    article
+      p Siempre es recomendable extraer todas las palabras o "string" de la aplicación para así poder hacer uso de archivos de recursosos y lograr internalización de la interfaz de usuario.
+      h2 Localización en archivos y directorios
+      .center
+        img(src='images/android/ss26.png')
+      p Es necesario que todas las palabras o frases se encuentren repetidas por cada lenguaje soportado.
+      .center
+        img(src='images/android/ss27.png')
+        img(src='images/android/ss28.png')
+      hr
+      h2 Utilizando los recursos
+      p
+        | En el código Java es posible hacer uso de los recursos obteniendo los valores con 
+        i R.string.&lt;string_name>
+        | .
+      .center
+        img(src='images/android/ss29.png')
+      p
+        | También en archivos xml se puede hacer uso de los recursos con 
+        i @string/&lt;string_name>
+        | .
+      .center
+        img(src='images/android/ss30.png')
+      hr
+      h2 Probando la localización
+      p Para probar la localización en un dispositivo o emulador es necesario modificar el valor en las configuraciones.
+      p
+        b Home > Menu > Settings > Locale & text > Select locale
+      hr
+      h2 Práctica
+      p Haciendo uso de lo aprendido cree una nueva aplicación que tenga las siguientes características.
+      ul
+        li Android app con una actividad simple con los valores por defecto.
+        li
+          | Agregue un TextView con un 
+          i @string
+          |  con las palabras en español, Hola Mundo o inglés, Hello World. Ese será el idioma por defecto.
+        li Agregue los folder de internalización para español o inglés, dependiendo de su opción anterior.
+        li Además agregue un tercer idioma.
+        li
+          | Haciendo uso de lo aprendido anteriormente cree un 
+          i Intent
+          |  que pase otro string de una actividad a otra.
+        li Pruebe la app en todos sus idiomas.
+    footer
+      img(src='images/android/ulatina.jpg')
+      img(src='images/GnA.png')
+  section.slide.s16
+    header
+      img(src='images/android/android.png').devices
+      h1 Soportando diferentes pantallas
+    article
+      h2 Tamaños de pantallas
+      p Existen diferentes maneras de categorizar los tamaños de las pantallas.
+      ul
+        li Por tamaños generalizados:
+          ul
+            li small
+            li normal
+            li large
+            li xlarge
+        li Por densidad:
+          ul
+            li low (ldpi)
+            li medium (mdpi)
+            li high (hdpi)
+            li extra high (xhdpi)
+        li
+          | Por posición: Donde la posición vertical es por defecto y la horizontal es 
+          b land
+          | .
+      .center
+        img(src='images/android/ss31.png')
+      hr
+      h2 Tamaños de imágenes
+      p Las imágenes de igual manera deben ser categorizadas.
+      ul
+        li xhdpi: 2.0
+        li hdpi: 1.5
+        li mdpi: 1.0 (base)
+        li ldpi: 0.75
+      .center
+        img(src='images/android/ss32.png')
+      hr
+      h2 Práctica
+      p Haciendo uso de lo aprendido cree una aplicación con las siguientes características:
+      ul
+        li Android app con los valores por defecto.
+        li Llámelo Android Pantallas (o como guste :) )
+        li
+          | Logre que dependiendo del tamaño de la pantalla, el tamaño del texto y la alineación de un 
+          b TextView
+          |  y un botón cambien, en almenos dos tamaños.
+        li De igual manera agregue una imagen que exista en las dos categorias anteriores. 
+    footer
+      img(src='images/android/ulatina.jpg')
+      img(src='images/GnA.png')
+  section.slide.s17
+    header
+      img(src='images/android/android.png').devices
+      h1 Ciclo de vida
+    article
+      h2 Entendiendo el Ciclo de Vida
+      .center
+        img(src='images/android/basic-lifecycle.png')
+      p El ciclo de vida de una aplicación funciona como una pirámide, en la que se va subiendo de nivel conforme más control existe, y de igual manera a la inversa mientas una aplicación se va destruyendo. 
+      p Es necesario usar ese control para garantisar el orden y la robustés de una aplicación. La aplicación debe comportarse bien en diversas sircunstancias.
+      ul
+        li No debe caerse al recivir una llamada.
+        li No debe caerse cuando el usuario se pasa a otra aplicación.
+        li No debe consumir recursos cuando el usuario no la está usando.
+        li No debe perder el progreso.
+        li No debe caerse o perder al usuario si la pantalla gira.
+      hr
+      h2 Los diferentes estados
+      p Existen algunos estados que existen siempre después o antes de otro, pero también existen estados "estáticos" que pueden permanecer por largos periodos de tiempo.
+      ol
+        li
+          b Resumed
+          | : Es el estado en el que el usuario puede interactuar con la aplicación.
+        li
+          b Paused
+          | : Es cuando alguna otra app o alerta, recordatorio o mensaje del sistema obscurece nuestra aplicación por un momento. Este estado no recibe input.
+        li
+          b Stoped
+          | : Cuando nuestra aplicación está escondida y no es visible. Todas las intancias son detenidas automáticamente.
+        li
+          b Created
+          |  y 
+          b Started
+          | : Son estados de transición y el sistema rpapidamente se cambia de uno a otro.
+      hr
+      h2 Especificación de la actividad principal
+      .center
+        img(src='images/android/ss33.png')
+      hr
+      h2 Práctica
+      p Haciendo uso de lo aprendido y del ejemplo a continuación, complete los siguientes pasos:
+      .center
+        img(src='images/android/ss34.png')
+      ol
+        li
+          | Asegúrese que el evento 
+          i onCreate
+          | del ejemplo esté igual.
+        li
+          | Agregue a la actividad el 
+          i TextView
+          |  faltante.
+        li Arregle cualquier error referente a la versión.
+        li
+          | Asigne un texto que indique la hora actual (pueden ser solo segundos) al 
+          i TextView
+          | .
+        li Ejecute su app.
+        li
+          | Agregue dos 
+          i TextView
+          |  más.
+        li
+          | Sobre escriba los eventos 
+          i onStart
+          |  y 
+          i onResume
+          | .
+        li Al igual que con el otro evento, asigneles el valor de la fecha (o segundos).
+        li Ejecute su aplicación.
+      .center
+        img(src='images/android/basic-lifecycle-create.png')
+      hr
+      h2 Destruyendo la actividad
+      .center
+        img(src='images/android/ss35.png')
+      h2 Practica
+      p
+        | Sobrecargue el método 
+        i onDestroy
+        |  e imprime en la consola un mensaje de despedida.
+      p
+        | Puede usar 
+        i System.out.println("Adios!!");        
+    footer
+      img(src='images/android/ulatina.jpg')
+      img(src='images/GnA.png')
+  section.slide.s18
+    header
+      img(src='images/android/android.png').devices
+      h1 Pausando y resumiendo la actividad
+    article
+      .center
+        img(src='images/android/basic-lifecycle-paused.png')
+      h2
+        | Usando 
+        i onPause
+      p Debe ser usado para:
+      ul
+        li Detener animaciones.
+        li Detener procesos que consiman CPU.
+        li Guardar cambios sin salvar.
+        li Liberar recursos del sistma.
+      h2 Ejemplo.
+      .center
+        img(src='images/android/ss36.png')
+      hr
+      h2
+        | Usando 
+        i onResume
+      p Debe ser usado para restaurar los estados al contrario de lo que se hace al pausar la actividad.
+      h2 Ejemplo.
+      .center
+        img(src='images/android/ss37.png')
+    footer
+      img(src='images/android/ulatina.jpg')
+      img(src='images/GnA.png')
+  section.slide.s19
+    header
+      img(src='images/android/android.png').devices
+      h1 Deteniendo y reiniciando la actividad
+    article
+      .center
+        img(src='images/android/basic-lifecycle-stopped.png')
+      h2
+        | Escenarios clave en los que se puede usar  
+        i onStop
+        |  y 
+        i onRestart
+      ul
+        li Cuando el usuario cambia de aplicación desde la ventana de aplicaciones recientes.
+        li Cuando el usuario navega a otra actividad.
+        li Cuando el usuario recive una llamada telefónica.
+      h2
+        | Ejemplo de 
+        i onStop
+      .center
+        img(src='images/android/ss38.png')
+      h2
+        | Ejemplo de 
+        i onRestart
+      .center
+        img(src='images/android/ss39.png')
+      hr
+      h2 Práctica
+      p
+        | Sobrescriba los métodos 
+        i onStop
+        |  y
+        i onRestart
+        |  de modo que escriban en el 
+        b debugger
+        |  mensajes que demuestren cuando son llamados. Practique cambiando de aplicación, navegando a otra actividad y en caso de estar debugeando en un dispositivo real, haga que un compañero lo llame.
+    footer
+      img(src='images/android/ulatina.jpg')
+      img(src='images/GnA.png')
+  section.slide.s19
+    header
+      img(src='images/android/android.png').devices
+      h1 Recreando la actividad
+    article
+      p Existen algunos escenarios en los que una actividad es destruida ya sea manualmente o por comportamientos normales de Android.
+      ul
+        li Cuando el usuario presiona atrás per ono hay actividad padre.
+        li
+          | Cuando programaticamente se ejecuta 
+          i finish()
+          | .
+        li Cuando la aplicación está detenida y no se usa en mucho tiempo.
+        li Cuendo el sistema está bajo de recursos y decide que liberará los recursos de su aplicación.
+        li Cuando se rota la pantalla.
+      .center
+        img(src='images/android/basic-lifecycle-savestate.png')
+      h2
+        | Ejemplos de 
+        i onSaveInstanceState
+        |  y 
+        i onRestoreInstanceState
+      .center
+        img(src='images/android/ss40.png')
+        img(src='images/android/ss41.png')
+      h2 Practica
+      p Sobrescriba los eventos anteriores y guarde algun valor. Imprima en los dos casos a la consola el dicho valor. Luego rote el dispositivo para ver las impresiones a consola.
+      p
+        | Finalmente programe el evento de un botón y ejecute 
+        i finish()
+        | , para ver el mensaje de impresión.
+    footer
+      img(src='images/android/ulatina.jpg')
+      img(src='images/GnA.png')
+block append body
+  script(src='javascripts/android.js')

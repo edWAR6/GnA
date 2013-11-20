@@ -6,5 +6,9 @@ exports.index = function(req, res){
 };
 
 exports.notfound = function(req, res){
-	res.render('404');
+  res.render('404');
+};
+
+exports.android = function(req, res){
+  res.render('android');
 };
