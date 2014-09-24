@@ -1,0 +1,32 @@
+//- GnA Eduardo Oviedo Blanco
+//- eduardo.oviedo@gnastudio.net
+
+extends presentation
+block append head
+  link(rel='stylesheet', href='stylesheets/oracle.css')
+  //if gte IE 9
+    style(type='text/css')
+      .gradient {
+        filter: none;
+      }
+block content
+  section.slide.current
+    header.oracle.gradient
+      h1 Oracle Database 11g: Administration Workshop
+    article.chapter
+      .row
+        .column
+          h2 Eduardo Oviedo Blanco          
+          p CEO y Director de Games 'n Apps
+          p Más de 10 años de experiencia en desarrollo de software.
+        .column
+          h3 eduardo.oviedo@gnastudio.net
+          h3 Skype: edWAR6
+          h3 Teléfono: 71129849
+    include advancelearning
+  section.slide
+    header.oracle.gradient
+      h1 Copias de seguridad
+    article.chapter
+      
+    include advancelearning

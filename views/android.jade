@@ -16,6 +16,7 @@ block content
       .column
         h2 Eduardo Oviedo Blanco
         h3 eduardo.oviedo@gnastudio.net
+        h3 Skype: edWAR6
         p CEO y Director de Games 'n Apps
         p Más de 10 años de experiencia en desarrollo de software.
         p Experiencia en creación de aplicaciones para diferentes plataformas:
@@ -1195,7 +1196,7 @@ block content
     footer
       img(src='images/android/ulatina.jpg')
       img(src='images/GnA.png')
-  section.slide.s19
+  section.slide.s20
     header
       img(src='images/android/android.png').devices
       h1 Recreando la actividad
@@ -1226,6 +1227,490 @@ block content
         | Finalmente programe el evento de un botón y ejecute 
         i finish()
         | , para ver el mensaje de impresión.
+    footer
+      img(src='images/android/ulatina.jpg')
+      img(src='images/GnA.png')
+  section.slide.s21
+    header
+      img(src='images/android/android.png').devices
+      h1 Fragmentos
+    article
+      ul
+        li Son módulos que permiten encapsular conponentes de la interfaz de usuario.
+        li Funcionan como actividades anidadas.
+        li Pueden usarse para diseñar el contenido de una actividad según su tamaño.
+      .center
+        img(src='images/android/xfragmentsusage10.png.pagespeed.ic.klPuIUtmsa.png')
+        img(src='images/android/xfragmentsusage20.png.pagespeed.ic.PQNhLJI8-B.png')
+      hr
+      h2
+        | Creando la clase 
+        i Fragment
+      .center
+        img(src='images/android/ss42.png')
+      h3 Práctica
+      p Siga las instrucciones del instructor.
+      hr
+      h2
+        | Agregando la actividad usando 
+        b XML
+      .center
+        img(src='images/android/ss43.png')
+      h3 Práctica
+      p Siga las instrucciones del instructor.
+      hr
+      h2 Practica
+      p
+        | Haciendo uso de lo aprendido cree un proyecto con los valores por defecto, pero cree dos 
+        b layout
+        | . Uno horizontal y otro vertical.
+      p
+        | Debe crear dos 
+        b Fragment
+        | . Uno con un campo de búsqueda, un botón y un parrafo de texto. El otro con una imagen expandida.
+      p
+        | Luego use en el 
+        b layout
+        |  vertical los dos fragmentos uno sobre otro y en el horizontal uno al lado de otro.
+      hr
+      h2 Comunicación entre fragmentos
+      h3 Definición de la interfaz
+      .center
+        img(src='images/android/ss44.png')
+      h3 El evento
+      .center
+        img(src='images/android/ss45.png')
+      h3 Implementando la interfaz
+      .center
+        img(src='images/android/ss46.png')
+      hr
+      h2 Práctica
+      p Haciendo uso de lo aprendido cree una app con una actividad por defecto. Agregue un fragmento con tres botones, uno de un color distinto.
+      p El fragmento debe comunicarse con la actividad y cada vez que se toque uno de los botones la actividad debe de escribir en un campo de texto el nombre del color seleccionado.
+      hr
+      h2 Entregando el mensaje a otro fragmento
+      .center
+        img(src='images/android/ss47.png')
+      hr
+      h2 Práctica
+      p
+        | Haciendo uso de lo aprendido cree una aplicación con dos 
+        b layouts
+        | , uno horizontal y otro vertical. Cree dos fragmentos, uno con tre botones de diferente color y el otro con un texto que cambie al nombre y al color seleccionado.
+    footer
+      img(src='images/android/ulatina.jpg')
+      img(src='images/GnA.png')
+  section.slide.s22
+    header
+      img(src='images/android/android.png').devices
+      h1 Bases de datos
+    article
+      p Generalmente las apps necesitan guardar algunos datos.
+      ul
+        li Pares de valores en archivos de preferencias.
+        li
+          | Archivos varios en el 
+          b file system
+          | .
+        li
+          | Datos en el 
+          b SQLite
+          | .
+      h2
+        | Guardando 
+        b Key-Value Sets
+      p
+        | Si se debe guardar una colección relativamente pequeña de llaves y valores, se debe de usar la clase 
+        b SharedPreferences
+        | .
+      h3
+        | Obteniendo el objeto 
+        b SharedPreferences
+      p Existen dos maneras de almacenar datos para las preferencias.
+      ul
+        li
+          | Usando 
+          i getSharedPreferences()
+          | .
+        li
+          | Usando 
+          i getPreferences()
+          | .
+      .center
+        img(src='images/android/ss48.png')
+        img(src='images/android/ss49.png')
+      hr
+      h3 Escritura
+      .center
+        img(src='images/android/ss50.png')
+      hr
+      h3 Lectura
+      .center
+        img(src='images/android/ss51.png')
+      hr
+      h2 Práctica
+      p Cree una aplicación que contenga un campo de texto, un botón para guardar y otro para consultar. Muestre el resultado de la consulta en el mismo campo u otro. 
+      hr
+      h2 Guardando archivos
+      p Existen dos tipos de almacenamiento.
+      h3 Internal storage:
+      ul
+        li Siempre disponible.
+        li Estos archivos son solo accesibles por su app.
+        li Cuando la app se desinstale estos archivos serán eliminados.
+      p
+        b Internal storage
+        | es mejor cuando se desea que ni el usuario ni otras aplicaciones accedan a sus archivos.
+      h3 External storage:
+      ul
+        li Los archivos no siempre están disponibles.
+        li Pueden ser leidos por otras aplicaciones, plataformas, etc.
+        li Cuando la app se desinstala estos archivos se eliminan solo si están presentes.
+      p
+        b External storage
+        | es mejor cuando se desea que los archivos no tengan restricciones y se deseen compartir datos.
+      h3 Permiso
+      .center
+        img(src='images/android/ss52.png')
+        img(src='images/android/ss53.png')
+      hr
+      h3
+        | Guardando un archivo en el 
+        b Internal Storage
+      .center
+        img(src='images/android/ss54.png')
+        img(src='images/android/ss55.png')
+      h3 Ejemplos
+      .center
+        img(src='images/android/ss56.png')
+        img(src='images/android/ss57.png')
+      h2 Práctica
+      p Haciendo uso de lo aprendido cree una app que guarde un gran párrafo de texto en la memoria interna del dispositivo cuando la app se cierre y luego que la consulte cuando la aplicación se habra nuevamente.
+
+      hr
+      h3
+        | Guardando un archivo en el 
+        b External storage
+      p
+        | Antes de iniciar a usar el 
+        b External Storage
+        |  debemos verificar su estado.
+      .center
+        img(src='images/android/ss58.png')
+      p Aunque los archivos son accesibles por el usuario y otras apps, existen dos tipos.
+      ul
+        li
+          b Public
+        p Archivos que deben ser accesidos por el usuario o otras apps. Cuando el usuario desinstala la app, los archivos quedarán disponibles. Ej: Fotos, Videos, etc.
+        li
+          b Private
+        p Archivos solo entendibles por su propia app y que se borrarán cuando se desinstale la app. Ej: Archivos de configuración, puntaje, etc.
+      h3 Ejemplos
+      .center
+        img(src='images/android/ss59.png')
+        img(src='images/android/ss60.png')
+      hr
+      h2 Practica
+      p Haciendo uso de lo aprendido, los ejemplos y preguntando al instructor cree una aplicación que tenga dos campos de texto y dos botones que guarden uno en un archivo privado y otro en uno público. los dos archivos deben estar en un contenedor externo y debe asegurarse antes de su estado. 
+      hr
+    footer
+      img(src='images/android/ulatina.jpg')
+      img(src='images/GnA.png')
+
+  section.slide.s23
+    header
+      img(src='images/android/android.png').devices
+      h1 Bases de datos parte 2
+    article
+      h2 Bases de datos SQLite
+      p Una base de datos en SQLite puede crecer tanto como la memoria interna se lo permita y cada query puede mover hasta un MB de datos.
+      .tip
+        span Tip:
+        p Información adicional sobre tamaños.
+        a(href='http://www.sqlite.org/limits.html') Límites de SQLite
+      h3 Aprender haciendo
+      p La mejor manera de aprender a hacer una base de datos como esta es haciendola.
+      hr
+      h3 Siga las instrucciones del instructor.
+      ol
+        li Cree un nuevo proyecto de Android con los valores por defecto.
+        li
+          | Analice el siguiente modelo. Con la tabla 
+          b Book.
+          .center
+            img(src='images/android/ss61.png')
+        li
+          | Cree un paquete y llámelo 
+          b Model
+          | .
+        li
+          | Cree una clase 
+          b Book.java
+        li Programe la clase basandose en el modelo ER.
+        li Agregue Gets y Sets, un constructor y un toString.
+        li
+          | Cree una nueva clase y llámela 
+          b MySQLiteHelper
+          | .
+        li
+          | Asegurese de que la clase extienda a 
+          i SQLiteOpenHelper
+          | .
+        li Agregue dos variables de clase estáticas, una para la versión de la BD y otra para el nombre.
+        li
+          | Cree un constructor que reciva un parámetro context de tipo 
+          i Context
+          | .
+        li
+          | Sobrescriba los eventos 
+          i onCreate
+          |  y 
+          i onUpgrade
+          | .
+          .center
+            img(src='images/android/ss62.png')
+        li
+          | En la misma clase helper agregue los procedimientos 
+          i addBook(Book book)
+          | , 
+          i getBook(int id)
+          | , 
+          i getAllBooks()
+          | , 
+          i update(Book book)
+          | , 
+          i delete(Book book)
+          | .
+        li Defina constntes para en nombre de la tabla y sus columnas.
+          .center
+            img(src='images/android/ss63.png')
+        li Programe el procedimiento para agregar.
+          .center
+            img(src='images/android/ss64.png')
+        li Programe el procedimiento para consultar por id.
+          .center
+            img(src='images/android/ss65.png')
+        li Programe el procedimiento para listar.
+          .center
+            img(src='images/android/ss66.png')
+        li Programe el procedimiento para actualizar.
+          .center
+            img(src='images/android/ss67.png')
+        li Programe el procedimiento para borrar.
+          .center
+            img(src='images/android/ss68.png')
+        li Ejemplo de uso.
+          .center
+            img(src='images/android/ss69.png')
+        li Vea los logs en el LogCat.
+          .center
+            img(src='images/android/ss70.png')
+            img(src='images/android/ss71.png')
+      .tip
+        span Tip:
+        p Puede mejorar estas clases usando un patrón de diseño.
+        a(href='http://en.wikipedia.org/wiki/Singleton_pattern') Singleton
+      img(src='images/android/ss72.png')
+      hr
+      h2 Práctica
+      p Analice y comente en clase cómo implementaría el siguiente modelo.
+      .center
+        img(src='images/android/ss73.png')
+    footer
+      img(src='images/android/ulatina.jpg')
+      img(src='images/GnA.png')
+  section.slide.s24
+    header
+      img(src='images/android/android.png').devices
+      h1 Bases de datos parte 3
+    article
+      h2 Bases de datos externas.
+      p Para entender las bases de datos externas primero hay que aprender cómo una app debería de comunicarse al exterior.
+      h2 Arquitectura REST
+      a(href='http://en.wikipedia.org/wiki/Representational_state_transfer') Representational state transfer
+      hr
+      h2 Permisos
+      p Recuerde pedirle el permiso a la app para usar internet.
+      .center
+        img(src='images/android/ss74.png');
+      hr
+      h2 Ejemplos de GET y POST
+      .center
+        img(src='images/android/ss75.png');
+        img(src='images/android/ss76.png');
+      hr
+      h2 Practica
+      p Cree una aplicación con los valores por defecto. Agregue dos campos de texto para el nombre y email del estudiante. Agregue un botón para guardar.
+      p Luego haga otra pantalla (Activity) donde desde que inicia, consulte la lista de estudiantes.
+      p Siga las instrucciones del instructor para lograrlo.
+    footer
+      img(src='images/android/ulatina.jpg')
+      img(src='images/GnA.png')
+  section.slide.s24
+    header
+      img(src='images/android/android.png').devices
+      h1 Google Play
+    article
+      h2 Tus aplicaciones en Google Play
+      .center
+        img(src='images/android/google-play.png')
+      ul
+        li Un billón de descargas al mes y aumentando.
+        li Acceso mundial.
+        li Crecimiento acelerado.
+        li Preinstalado en 400 millones de dispositivos.
+        li Se descargaron más de 25 billones de apps.
+        li En más de 130 paices.
+      .center
+        img(src='images/android/gp-growth-downloads.png')
+      h2 Excelentes herramientas
+      p Diseñado para conectar al usuario con las aplicaciones. Provee los canales y herramientas para ayudarte a ganar posición en el mercado.
+      h3 Calificación y reviews
+      .center
+        img(src='images/android/gp-rating-web.png')
+      h3 Búsqueda por categoría
+      .center
+        img(src='images/android/gpp-cat-feature280-photo.png')
+        img(src='images/android/gpp-cat-feature280-sports.png')
+        img(src='images/android/gpp-cat-feature280-puzzle.png')
+      h3 Búsqueda por listas
+      .center
+        img(src='images/android/gp-top-new-paid.png')
+      ul
+        li Top Free: Los mejores juegos y aplicaciones gratuitas.
+        li Top Paid: Los mejores juegos y aplicaciones pagados.
+        li Top New Free: Los mejores juegos y aplicaciones gratuitas con menos de 30 días de publicados.
+        li Top New Free: Los mejores juegos y aplicaciones pagadas con menos de 30 días de publicados.
+        li Top Grossing: Los juegos y aplicaciones que más ingresos generan, gratis o pagadas.
+        li Best Selling: Aplicaciones y juegos pagados más populares.        
+        li Trending: Nuevos juegos y aplicaciones creciendo rápido en unstalaciones.
+      h3 Elegidos por el personal, coleccionables y listas
+      .center
+        img(src='images/android/gp-apps-home.png')
+        img(src='images/android/gp-games-home.png')
+        img(src='images/android/gp-collectibles.png')
+      hr
+      h2 Página principal
+      .center
+        img(src='images/android/gp-details-pages-magicpiano.png')
+      hr
+      h2 Monetización
+      h3 Compras en diferentes plataformas
+      p Google Play permite realizar compras en la web, en el app móvil o un tablet.
+      p Es posible comprar para un dispositivo desde otro.
+      hr
+      h3 Métodos de pago
+      ul
+        li Tarjetas de crédito.
+        li Cargo automático a la linea telefónica.
+        li Gift cards.
+        li Puntos de Google Play.
+      hr
+      h3 Modelos de cobro
+      p Google Play permite 3 modelos de cobro.
+      ul
+        li Gratuito.
+        li Con precio establecido.
+        li Productos y subscripciones dentro de la aplicación.
+      .center
+        img(src='images/android/gp-subs.png')
+      hr
+      h3 Multi-moneda
+      p Google Play permite cobrar en una moneda específica o permitir que el cliente vea los precios en moneda local.
+      .center
+        img(src='images/android/gp-buyer-currency.png')
+      hr
+      h2 Control de distribución
+      p Google Play permite distribuir y actualizar aplicaciones de manera casi instantanea o permite indicar la hora para procesar la publicación o actualización.
+      h3 Objetivos geográgicos
+      .center
+        img(src='images/android/gp-dc-countries.png')
+      hr
+      h3 Objetivos por dispositivo
+      .center
+        img(src='images/android/gp-supported-dev-requirements.png')
+      hr
+      h3 Estadísticas
+      .center
+        img(src='images/android/gp-dc-stats-mini.png')
+    footer
+      img(src='images/android/ulatina.jpg')
+      img(src='images/GnA.png')
+  section.slide.s25
+    header
+      img(src='images/android/android.png').devices
+      h1 Developer Console
+    article
+      .center
+        a(href='https://play.google.com/apps/publish')
+          img(src='images/android/ss77.png')
+      .center
+        img(src='images/android/gp-devconsole-home.png')
+      h2 Publisher Account
+      ol
+        li Ingrese al Developer Console.
+        li Ingrese su información básica.
+        li Acepte las reglas y acuerdos de distribución.
+        li Pague el costo de $25 por registro.
+      h2 Merchant Account
+      ol
+        li Ingrese al Developer Console.
+        li Ingrese a la sección de Financial Reports.
+        li Click Setup a Merchant Account.
+      hr
+      h2 La consola
+      .center
+        img(src='images/android/gp-dc-home.png')
+      h3 Reviews por aplicación
+      .center
+        img(src='images/android/gp-dc-reviews.png')
+      hr
+      h3 Estadísticas
+      .center
+        img(src='images/android/gp-dc-stats.png')
+        .tip
+          span Sobre distribución:
+          p Es importante tener conocimiento sobre las versiones y su proporción.
+          a(href='http://developer.android.com/about/dashboards/index.html') Dashboards
+      br
+      br
+      br
+      br
+      br    
+      hr
+      h2 Checklist final
+      p Finalmente para poder publicar una aplicación solamente hará falta seguir una serie de pasos y lineamientos.
+      ol
+        li Entender el proceso de publicación.
+        li Entender las políticas y acuerdos.
+        li Pruebe la calidad de la aplicación.
+        li Determine el nivel del contenido:
+          ul
+            li Everyone
+            li Low maturity
+            li Medium maturity
+            li High maturity
+        li Determine la distribución por país.
+        li Confirme el tamaño de la aplicación.
+        li Determine las plataformas soportadas y los tamaños de las pantallas.
+        li Decida si su aplicación será gratis o cobrada.
+        li Considere si su app venderá contenido interno.
+        li Asigne el precio a sus productos.
+        li Active localización.
+        li Prepare los gráficos promocionales, screenshots y videos.
+        li Compile y genere el APK.
+        li Planee una versión beta.
+        li Complete los detalles del producto.
+        li Use el Google Play badges y links para su promoción.
+        li Revise todo antes de publicar.
+        li De soporte a los usuarios después del lansamiento.
+      hr
+      br
+      h1 Muchas Gracias
+      h2 Eduardo Oviedo Blanco
+      h3 eduardo.oviedo@gnastudio.net
+      h3 Skype: edWAR6
+      br
     footer
       img(src='images/android/ulatina.jpg')
       img(src='images/GnA.png')

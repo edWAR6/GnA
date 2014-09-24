@@ -1,0 +1,436 @@
+//- GnA Eduardo Oviedo Blanco
+//- eduardo.oviedo@gnastudio.net
+
+extends presentation
+block append head
+  link(rel='stylesheet', href='stylesheets/dotnet.css')
+block content
+  section.slide.current
+    header.visualstudio
+      h1 Fundamentos de desarrollo WEB
+    article.chapter
+      .row
+        .column
+          h2 Eduardo Oviedo Blanco          
+          p CEO y Director de Games 'n Apps
+          p Más de 10 años de experiencia en desarrollo de software.
+        .column
+          h3 eduardo.oviedo@gnastudio.net
+          h3 Skype: edWAR6
+          h3 Teléfono: 71129849
+    include advancelearning
+  section.slide
+    header
+      h1 Contenido del curso      
+    article
+      p Este curso estará moldeado a las necesidades de los alumnos.
+      h2 Día 1: Programación de aplicaciones Web
+      ul
+        li Introducción
+        li Espectativas
+        li HTML y CSS
+        li Objetos de ASP.Net
+        li Ideas, aportes, peticiones
+        li Estados de la aplicación
+      h2 Día 2: Programación de aplicaciones Web
+      ul
+        li Eventos y flujos de una página
+        li Controles
+        li Archivos de configuración
+      h2 Día 3: Trabajo con datos y servicios
+      ul
+        li XML
+        li Data Sets y Datareaders
+        li Servicios
+      h2 Día 4: Trabajo con datos y servicios
+      ul
+        li Controles Datasource
+        li Acceso a bases de datos
+      h2 Día 5: Solución de problemas y depuración de aplicaciones WEB
+      ul
+        li Depuración de página web
+        li Gestión de errores
+      h2 Día 6: Secuencias de comandos desde el cliente
+      ul
+        li Secuencias de comandos
+        li Ajax
+      h2 Día 7: Configuración e implementación de páginas WEB
+      ul
+        li Authentication y Authorization
+        li Configuración de proyectos
+        li Publicación de aplicaciones
+        li Grupos de aplicciones 
+      p Conforme se adentra en el taller se cambia el contenido
+    include advancelearning
+  section.slide
+    header
+      h1 Espectativas del curso
+    article      
+      ul
+        li ¿Qué espera aprender?
+        li ¿Qué necesita en su trabajo?
+        li ¿Hasta dónde le gustaría llegar?
+        li ¿Dónde necesita ayuda?
+      .center
+        img(src='images/dotnet/expectations.jpg') 
+    include advancelearning
+  section.slide
+    header
+      h1 HTML
+    article      
+      h2 Historia
+      ul
+        li Es un lenguaje "markup" que convina texto e instrucciones.
+        li "Markup" proviene del término "marking up", que se usaba en la creación de manuscitos.
+        li Sus siglas significan HyperText Markup Language. Y es el lenguaje oficial de la Web desde 1990. Proveninet del SGML.
+        li Guerra de los browsers.
+      h2 Introducción
+      h3 Ejemplo
+      .center
+        img(src='images/web/html1.png')
+        a(href='http://www.w3schools.com/html/tryit.asp?filename=tryhtml_intro', target='_blank') Ejemplo...
+      h3 HTML Tags
+      ul
+        li Son palabras reservadas rodeadas por '<' y '>'.
+        li Usualmente vienen en pares, uno que abro y otro que cierra.
+      .center
+        img(src='images/web/tag1.png')
+      h3 Web browsers
+      ul
+        li Software que interpreta el HTML y otros lenguajes y los muestra como páginas web.
+      .center
+        img(src='images/web/browser.jpg')
+      h3 Estructura
+      .center
+        img(src='images/web/html2.png')
+      h3 Versiones de HTML
+      .center
+        img(src='images/web/html3.png')
+      h3 Declaración del 
+        i &lt;!DOCTYPE&gt;
+      p Le indica al browser la versión del documento a interpretar.
+      .center
+        img(src='images/web/doctypes.png')
+      h2 Practica
+      p Haciendo uso de cualquier editor de texto, cree una página HTML5 con las siguientes partes.
+      ul
+        li Un título con su nombre.
+        li Un parrafo con un "Hola mundo"
+        li Un link a un sitio externo.
+      .center
+        img(src='images/web/practica1.png')
+    include advancelearning
+  section.slide
+    header
+      h1 CSS
+    article      
+      h2 ¿Qué es CSS?
+      ul
+        li 
+          b CSS
+          |  significa "Cascading Style Sheet".
+        li Define cómo se ven los elementos del HTML.
+        li Existen desde HTML 4.0.
+        li Pueden ahorrar muchísimo trabajo.
+        li Se almacenan en archivos con la extención ".css".
+      h2 Ejemplo
+      .center
+        img(src='images/web/css.png')
+        img(src='images/web/css1.png')
+        br
+        a(href='http://www.w3schools.com/css/tryit.asp?filename=trycss_default', target='_blank') Ejemplo...
+      h2 Syntax
+      .center
+        img(src='images/web/selector.png')
+        img(src='images/web/syntax.png')
+      h2 Comentarios
+      .center
+        img(src='images/web/comments.png')
+      h2 Selectores
+      p Mecanismo de selección y de aplicación de filtros para los estilos.
+      h3 Selector de elemento (tipo)
+      .center
+        img(src='images/web/tipo.png')
+      h3 Selector de ID (#)
+      .center
+        img(src='images/web/ID.png')
+      h3 Selector de Clase (.)
+      .center
+        img(src='images/web/clase.png')
+        img(src='images/web/clase2.png')
+      h3 Agrupaciones
+      .center
+        img(src='images/web/grupos.png')
+        img(src='images/web/grupos2.png')
+      h2 Inclusión del archivo externo de CSS
+      p Para mejorar la calidad del producto y facilitar el manteniemiento, el css se separa en otro archivo con la extención ".css".
+      p Para incorporar la referencia en el HTML se utiliza el siguiente TAG.
+      .center
+        img(src='images/web/link.png')
+      h2 Cascada de estilos
+      p Es posible que una página contenga más de un estilo definido, para esto existe un nivel de prioridad establecido.
+      ol
+        li Estilos por defecto del browser.
+        li Archivos .css externos.
+        li Código .css internos.
+        li Estilos en lines.
+      h2 Práctica
+      p Haciendo uso del HTML de la práctica anterior, haga los siguientes estilos en un archivo .css externo.
+      ol
+        li Color de fondo #b0c4de. Con la propiedad background-color.
+        li Una regla a los tipos h1 que haga la propiedad color #00ff00.
+        li Un parrafo "Hola mundo" con una clase que tenga la propiedad margen-top en 100px.
+        li Un parrafo "Hola mundo 2" con una clase que tenga la propiedad margen-left en 50px.
+        li Finalmente al link, quitele la linea de abajo, con la propiedad text-decoration, la cual debe tener el valor "none".
+    include advancelearning
+  section.slide
+    header
+      h1 Primer práctica de ASP.Net
+    article      
+      h2 Creación de una simple página ASP.Net
+      .center
+        img(src='images/web/VSlogo.png')
+      p Siga los siguientes pasos para crear su primera página web en ASP.Net.
+      ol
+        li En Visual Studio Ultimate, en el menú file, elija Nueva y elija proyecto. Aparecerá el cuadro de diálogo Nuevo proyecto.
+        li En Plantillas instaladas, expanda el lenguaje de programación que desee y, a continuación, haga clic en Web.
+        li En la lista de tipos de proyectos web, seleccione Aplicación web vacía de ASP.NET.
+        li En el cuadro Nombre, escriba ColorWebApp.
+        li En el cuadro Ubicación, especifique la carpeta donde desea crear la aplicación web.
+        li Seleccione Crear directorio para la solución.
+        li Elija Aceptar.
+        li En el Explorador, compruebe que el nuevo proyecto ColorWebApp está seleccionado.
+        li En el menú PROYECTO, elija agregar nuevo elemento.
+        li En la lista de elementos, elija Web Forms.
+        li En el cuadro de texto Nombre, escriba Default.aspx y, a continuación, escoja Agregar.
+      h3 Para agregar controles
+      ol
+        li En el explorador de soluciones, haga clic con el botón secundario en Default.aspx y elija Ver diseñador. Se mostrará una página en blanco.
+        li Si el cuadro de herramientas no está visible, en el menú VISTA elija Cuadro de herramientas.
+        li En el grupo Estándar, arrastre un control RadioButtonList a la página.
+        li Expanda el panel de la etiqueta de acción Tareas RadioButtonList, y elegir el vínculo EditItems.
+        li Elija Agregar para agregar un nuevo elemento.
+        li En Propiedades ListItem:
+          ul
+            li Cambie la propiedad Text a Red.
+            li Establezca la propiedad Selected en True.
+        li Elija Agregar para agregar otro elemento.
+        li En Propiedades ListItem, cambie la propiedad Text a Blue.
+        li Elija Aceptar para cerrar el Editor de la colección ListItem.
+        li Arrastre un control Button hasta la página y, en la ventana Propiedades, cambie la propiedad Text a Submit.
+        li En el menú file, elija Guardar todos.
+      h3 Páginas
+      ol
+        li En el menú PROYECTO, elija agregar nuevo elemento.
+        li En el cuadro de diálogo Agregar nuevo elemento, seleccione Web Forms de la lista de plantillas, y en Name escriba Red.aspx. A continuación Add.
+        li En la parte inferior de la ventana de documento, seleccione en la pestaña Diseño para pasar a la vista de diseño.
+        li Arrastre un control Label a la página. En la ventana Propiedades, establezca la propiedad Text en Red y la propiedad ForeColor en Red.
+        li En el menú PROYECTO, elija agregar nuevo elemento.
+        li En el cuadro de diálogo Agregar nuevo elemento, elija la plantilla Web Form , asígnele el nombre Azul.aspx y, a continuación, elija Agregar.
+        li En la parte inferior de la ventana de documento, seleccione en la pestaña Diseño para pasar a la vista de diseño.
+        li Arrastre un control Label a la página. En la ventana Propiedades, establezca la propiedad Text en Blue y la propiedad ForeColor en Blue.
+        li En el menú file, elija Guardar todos.
+      h3 Funcionalidades
+      ol
+        li En el haga clic con el botón secundario en Default.aspx en el explorador de soluciones y elija Ver diseñador.
+        li Haga doble clic en el control ButtonSubmit. Visual Studio cambia al código de página y crea un esqueleto de controlador de eventos para el evento Click del control Button.
+        li Agregue el código siguiente al controlador de eventos:
+          .center
+            img(src='images/web/code1.png')
+        li En el menú file, elija Guardar todos.
+      h3 Probando la aplicación manualmente
+      ol
+        li En el explorador de soluciones, haga clic con el botón secundario en Default.aspx y elija Establecer como página principal.
+        li Presione CTRL+F5 para ejecutar la aplicación web en el explorador. Verá la primera página.
+        li Elija Rojo y después Enviar. Si la aplicación funciona correctamente irá a la página con Label que indica Rojo.
+        li Vuelva a la primera página.
+        li Elija Azul y después Enviar. Si la aplicación funciona correctamente irá a la página con Label que indica Azul.
+      
+    include advancelearning
+  section.slide
+    header
+      h1 ¿Qué le pareció ASP?
+    article      
+      h2 Sobre la tecnología
+      p ASP.net es un framework para construir páginas WEB, aplicaciones y servicios con HTML, CSS y JavaScript.
+      h2 Web Sites
+      p ASP,Net es muy bueno para construir sitios web, basados en HTML. Soporta tres tecnologías para construir sitios Web.
+      ol
+        li ASP.Net Web Forms: Utiliza controles en un modelo basado en eventos para desarrollo basado en componentes.
+        li ASP.Net MVC: Basado en la separación de conceptos y habilita un facil ambiente de pruebas.
+        li ASP.Net Web Pages: Consiste en la de código y HTML para crear una simple página con todo el contenido.
+      p Estas y más técnicas y tecnologías pueden mesclarse para lograr diferetes tipos de soluciones.
+
+      h2 APIs (Application Programming Interface)
+      p ASP.Net incluye ASP.NET Web API para crear servicios web tipo REST-ful, que retornan datos en formato JSON, XML o cualqueir otro formato de contenido.
+      p Un API puede proveer de servicios a una aplicación móvil como las de Windows Phones, iOS, Android, etc.
+      p Un API puede ser utulizado con cualquier otra tecnología de ASP.
+
+      h2 Mobile
+      p Con ASP.Net se pueden crear aplicaciones con diseño líquido (responsive design), frameworks como el de Twitter Bootstrap.
+      p ASP, puede fusionarse con otros frameworks poderosos como Sencha, JQuery mobile, Phonegag, etc.
+
+      a.twitter-timeline(href='https://twitter.com/aspnet', data-widget-id='502853594953953281') Tweets by @aspnet
+      script
+        !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+    include advancelearning
+  section.slide
+    header
+      h1 Reglas de sintaxis de ASP
+    article      
+      h2 Practicas guiadas
+      p Cree en nuevo proyecto en Visual Studio .Net, que sea una Applicación Web vacia, dentro, cree un Webform.
+      h3 ASP Clásico
+      p Se utiliza para escribir valores al browser.
+      .center
+        img(src='images/web/asp1.png')
+        br
+        img(src='images/web/asp2.png')
+      h3 VBScript
+      p Se pueden utilizar varios lenguajes junto con ASP, pero el oficial es el llamado VBScript.
+      .center
+        img(src='images/web/asp3.png')
+      h3 Javascript en ASP
+      p Para poder usar JavaScript como lenguaje hay que indicarlo en el inicio del documento.
+      .center
+        img(src='images/web/asp4.png')
+    include advancelearning
+  section.slide
+    header
+      h1 ASP.NET (ASPX y RAZOR)
+    article      
+      h2 Web Pages
+      p "Web Pages" es uno de los 3 modelos existentes para crear web sites y web applications.
+      p Es el modelo más simple e indicado para iniciar a programar ASP.Net.
+      ul
+        li Facil de aprender, entender y usar.
+        li Construido alrededor de páginas web simples.
+        li Similar a PHP y a ASP clásico.
+        li Código en el servidor puede ser en VB.Net o C#.net, u otros.
+        li Control total con HTML, CSS y JavaScript.
+      h2 Practica
+      p Usando Visual Studio .Net 2012, cree un Web Site vacio. Dentro agregue un Web Page, el cual puede ser en VBHTML o CSHTML.
+      p Usando el siguiente código de ejemplo cree una página y corrala para mostrar la fecha y hora actual.
+      .center
+        img(src='images/web/asp5.png')
+    include advancelearning
+  section.slide
+    header
+      h1 Repaso de RAZOR
+    article      
+      h2 ¿Qué es RAZOR?
+      ul
+        li Es un lenguaje "markup" para agregar código del servidor a las páginas ASP.
+        li Tiene las mismas capacidades ASP.Net pero más facil de aprender y de usar.
+        li Es ejecutado el el servidor, y el resultado viaja al cliente, similar a como funciona PHP, Jade, etc.
+        li RAZOR soporta C# y VB.
+      h2 Reglas a seguir en C#
+      ol
+        li Los bloques de código se encierran entre @{   ...   }
+        li Las expresiones (variables y funciones) inician con @
+        li Las lineas de código terminan en ;
+        li 
+          |las variables se declaran con la palabra reservada 
+          i var
+        li Los strings se encierran entre comillas
+        li El código C# es case-sensitive
+        li La extención de los archivos termina en .cshtml
+      h2 Reglas a seguir en VB
+      ol
+        li Los bloques de código se encierran entre @Code y End Code
+        li Las expresiones (variables y funciones) inician con @
+        li 
+          | las variables se declaran con la palabra reservada 
+          i Dim
+        li Los strings se encierran entre comillas
+        li El código VB no es case-sensitive
+        li La extención de los archivos termina en .vbhtml
+      h2 Practica
+      p En un web site, agregue un "Web Page" vacio y en él cree el sigueinte ejemplo, ya sea en C# o en VB.
+      .center
+        h3 C#
+        img(src='images/web/razor1.png')
+      .center
+        h3 VB
+        img(src='images/web/razor2.png')
+    include advancelearning
+  section.slide
+    header
+      h1 Layout
+    article            
+      p Con Web Pages es facil crear un sitio web con un layout consistente.
+      p Una interfaz consistente debería tener:
+      ul
+        li EL mismo header
+        li El mismo footer
+        li Mismos estilos
+        li Misma composición
+      h2 Layout en HTML5
+      .center
+        img(src='images/web/layouthtml5.png')
+      h2 Content Blocks
+      p
+        | Haciendo uso de 
+        b @RenderPage()
+        |  es posible importar contenido de una página a otra.
+      h3 Practica
+      p cree una página ASP, usando Razor e importe un mensaje en el header y otro en el footer.
+      .center
+        img(src='images/web/renderPage.png')
+      h2 Layout Page
+      p Es posible crear una vista consistente con un payout page. De esta manera se crea la estructura mas no el contenido.
+      p
+        | Un payout page difiere en que hace un llamado a 
+        b @RenderBody()
+        |  para definir cual es la sección de la página que será intercambiable.
+      .center
+        img(src='images/web/layout1.png')
+      p
+        | Luego cada página tendrá la directiva 
+        b Layout directive
+        | .
+      .center
+        img(src='images/web/layout2.png')
+      h3 Practica
+      p Cree un Layout page y un par de páginas adicionales, cada una con diferente contenido, 
+      h2 Consejos
+      p Para que una página no sea navegable, nombrelo con un _ al inicio. Por ejemplo _header.cshtml.
+      p Para ocultar datos importantes, puede incluir una página no navegable y dentro, colocar las variables.
+      .center
+        img(src='images/web/layout3.png')
+    include advancelearning
+  section.slide
+    header
+      h1 Objetos de ASP.Net
+    article      
+      h2 Controles del objeto Page
+      p Siguiendo al instructor, analice la lista de controles existentes en ASP.Net
+      .center
+        img(src='images/web/VSlogo.png')
+      h2 Métodos del objeto Page
+      .center
+        img(src='images/web/methods.png')
+      h2 Propiedades del objeto Page
+      .center
+        img(src='images/web/properties.png')
+    include advancelearning
+  section.slide
+    header
+      h1 Primer proyecto
+    article      
+      p Haciendo uso de lo aprendido y con la ayuda del instructor siga paso a paso las instrucciones para crear su primer sitio ASP.Net    
+      .center
+        img(src='images/web/ASPp1.png')    
+        br
+        a(href='http://www.asp.net/mvc/tutorials/mvc-4/getting-started-with-aspnet-mvc4/intro-to-aspnet-mvc-4') Introducción a ASP.NET MVC 4
+
+    include advancelearning
+  section.slide
+    header
+      h1 Segundo proyecto
+    article      
+      p Haciendo uso de lo aprendido y con la ayuda del instructor seleccione un tema relacionado con su trabajo y programe un mantenimiento completo.    
+      .center
+        img(src='images/web/VSlogo.png')        
+
+    include advancelearning

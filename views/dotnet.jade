@@ -1,0 +1,465 @@
+//- GnA Eduardo Oviedo Blanco
+//- eduardo.oviedo@gnastudio.net
+
+extends presentation
+block append head
+  link(rel='stylesheet', href='stylesheets/dotnet.css')
+block content
+  section.slide.current
+    header.visualstudio
+      h1 Taller de actualización de ASP.Net
+    article.chapter
+      .row
+        .column
+          h2 Eduardo Oviedo Blanco          
+          p CEO y Director de Games 'n Apps
+          p Más de 10 años de experiencia en desarrollo de software.
+        .column
+          h3 eduardo.oviedo@gnastudio.net
+          h3 Skype: edWAR6
+          h3 Teléfono: 71129849
+    include advancelearning
+  section.slide
+    header
+      h1 Contenido del taller      
+    article
+      p Este taller estará moldeado a las necesidades de los alumnos.
+      h2 Semana 1
+      ul
+        li Introducción
+        li Espectativas
+        li Historia de .Net
+        li Quiz nivelatorio
+        li Ideas, aportes, peticiones
+        li Asignación de proyectos
+      h2 Semana 2
+      ul
+        li Introducción al framework 3
+        li Introducción al framework 4
+        li Laboratorio
+        li Trabajo en el proyecto
+      h2 Semana 2
+      ul
+        li Introducción a C#
+        li C# Moderno
+        li Taller
+        li Prácticas
+      p Conforme se adentra en el taller se cambia el contenido
+    include advancelearning
+  section.slide
+    header
+      h1 Espectativas del curso
+    article      
+      ul
+        li ¿Qué espera aprender?
+        li ¿Qué necesita en su trabajo?
+        li ¿Hasta dónde le gustaría llegar?
+        li ¿Dónde necesita ayuda?
+      .center
+        img(src='images/dotnet/expectations.jpg') 
+    include advancelearning
+  section.slide
+    header
+      h1 Historia de .Net
+    article      
+      h2 ¿Porqué es importante saber la historia?
+      .center
+        img(src='images/dotnet/microsoft.jpg')
+      ul
+        li Conocimiento general
+        li Importante al momento de iniciar un proyecto
+        li Importante cuando se desea migrar un proyecto
+        li Saber los límites
+        li Estimación de tareas
+        li Compatibilidad con otras plataformas        
+    include advancelearning
+  section.slide
+    header
+      h1 Historia de .Net
+    article      
+      h2 Características generales de .Net
+      p Todos los Visual Studio .Net y todos sus frameworks tienen características que los hacen similares y otras que los diferencian entre si.
+      h3 Similitudes
+      ul
+        li Ambiente familiar
+        li Principales lenguages de programación
+        li Set de herramientas importantes
+        li Debbuger
+        li Varían en versiones
+      h3 Diferencias
+      ul
+        li Capacidades
+        li Diseño del IDE
+        li Costos
+        li Paquetes
+        li Méodos de trabajo
+    include advancelearning
+  section.slide
+    header
+      h1 Historia de .Net
+    article      
+      h2 .Net Framework 1.0
+      ul
+        li Liberado en febrero del 2002
+        li Win98, Me, NT 4.0, 2000, XP        
+        li Soporte cancelado en Julio 2007
+      .center
+        img(src='images/dotnet/VB0.png')
+    include advancelearning
+  section.slide
+    header
+      h1 Historia de .Net
+    article      
+      h2 .Net Framework 1.1
+      ul
+        li Abril del 2003
+        li .Net 2003
+        li Incluido en Windows Server 2003
+        li Termina su soporte en Octubre del 2008
+      h3 Mejoras
+      ul
+        li Los controles ASP.NET que en el 1.0 eran un Addon ahora vienen nativos.
+        li Seguridad mejorada con Code Access Security para ASP.NET
+        li Soporte nativo para ODBC y Oracle
+        li Nacimiento del .NET Compact Framework
+        li Soporte a IPV6
+        li Cambios numerosos en las APIs.
+      .center
+        img(src='images/dotnet/VB1.jpg')
+    include advancelearning
+  section.slide
+    header
+      h1 Historia de .Net
+    article      
+      h2 .Net Framework 2.0
+      ul
+        li Visual Studio 2005
+        li SQL Server 2005
+        li Service Pack 2
+        li Último en soportar windows 2000
+      h3 Mejoras
+      ul
+        li Los fabulosos Generics
+        li Soporte para compilaciones de 64 bits
+        li Numerosos cambios en las APIs
+        li Integración con SQL Server: CLR Integration
+        li Inclusión del Runtime de .NET en aplicaciones nativas.
+        li Nuevos y mejorados controles de ASP.NET
+        li Controles de Datos con Data Binding automático.
+        li Soporte para Temas, Skins y Webparts.
+        li Nacimiento del .NET Micro Framework.
+        li Clases Parciales!
+        li Tipos “Nullable” (por ejemplo enteros a los que se les puede dar el valor de nulo)
+        li Métodos Anónimos!
+        li Iteradores
+        li Tablas de Datos
+      .center
+        img(src='images/dotnet/VB2005.png')
+    include advancelearning
+  section.slide
+    header
+      h1 Historia de .Net
+    article      
+      h2 .Net Framework 3.0
+      ul
+        li Conocido como WinFX
+        li Liberado en Noviembre 2006
+        li Incluia APIs de Windows Vista
+        li Disponible para Windows XP solo con SP 2
+        li Disponible en Windows Server 2003
+        li Pocos cambios de arquitectura
+        li Usa runtime del Framework 2.0
+      h3 Mejoras
+      ul
+        li Windows Presentation Foundation (conocido antes como Avalon)
+        li Windows Communication Foundation (conocido como Indigo)
+        li Windows Workflow Foundation
+        li Windows CardSpace (Conocido antes como InfoCard).
+    include advancelearning
+  section.slide
+    header
+      h1 Historia de .Net
+    article      
+      h2 .Net Framework 3.5
+      .center
+        img(src='images/dotnet/NETframework35.png')
+      ul
+        li Noviembre 2007
+        li Grandes modificaciones en el framework para incluir linQ
+        li Compact framework 3.5
+        li Código fuente libre
+      h3 Mejoras
+      ul
+        li Nuevas características de lenguaje en C#3.0 y VB.NET 9.0
+        li Soporte para árboles de expresiones y expresiones y métodos lambda
+        li Extension Methods!
+        li Tipos Anónimos con inferencia estática de tipo
+        li LINQ!
+        li Soporte a paginación en ADO.NET
+        li API de sincronización de ADO.NET
+        li API de I/O asincrónico
+        li PNRP Resolver (Peer-To-Peer)
+        li Wrappers Administrados para instrumentación y Active Directory
+        li Motores de WCF y WF mejorados que permiten el manejo de POX y JSON en WCF y también exponer WF como servicio. De esta manera, los servicios WCF se pueden mejorar con persistencia nativa de WF!
+        li Soporte para pipeline de HTTP y sindicación de feeds.
+        li ASP.NET Ajax ya no viene como un addon sino nativo.
+      h3 Service Pack 1
+      ul
+        li Liberado en agosto de 2008.
+        li Performance mejorado para WPF en un 20-45%
+        li Agregado el Entity Framework y los ADO.NET Data Services.
+        li Agregados dos nuevos assemblies: System.Web.Abstraction y System.Web.Routing: Esenciales para el funcionamiento del MVC Framework.
+        li Incluyó un conjunto de controles de VisualBasic que se habían descontinuado como el Line y el Shape, en un conjunto llamado “Visual Basic Power Pack”.
+        li Viene con Windows 7 y Windows Server 2008 R2.
+      h3 .NET Framework 3.5 SP1 Client Profile
+      ul
+        li 28 MB
+        li Ideal para clientes que no necesitan todo el framework completo (250 MB)
+    include advancelearning
+  section.slide
+    header
+      h1 Historia de .Net
+    article      
+      h2 .Net Framework 4.0
+      ul
+        li Anunciado en Septiembre 2008
+        li Beta en mayo 2009
+        li Producción en abril 2010
+        li El framework más popular
+      h3 Mejoras
+      ul
+        li Extensiones de Paralelismo: Mejoran la computación paralela orientada a procesadores Multi-Core o sistemas distribuidos.
+        li Parallel LINQ (PLINQ)
+        li Task Parallel Library
+        li Implicit Line Continuations para Visual Basic
+        li Despacho dinámico: Asignación dinámica de métodos (tipo JavaScript)
+        li Parámetros nombrados
+        li Parámetros opcionales
+        li Soporte completo a IronPyton, IronRuby y F#.
+        li Contratos de Código
+        li Aritmética de precisión Arbitraria y Complejos gracias a System.Numerics.BigInteger y System.Numerics.Complex.
+      .center
+        img(src='images/dotnet/vb2010.png')
+    include advancelearning
+  section.slide
+    header
+      h1 Quiz nivelatorio
+    article
+      .center
+        iframe(src='https://docs.google.com/forms/d/1cFC0EhuYvhnh8Q7HoIdhmFfoMREGIoBa4fNFYR4Ot1Q/viewform?embedded=true', width='760', height='500', frameborder='0', marginheight='0', marginwidth='0') Loading...
+    include advancelearning
+  section.slide
+    header
+      h1 Ideas, aportes, peticiones
+    article
+      .center
+        img(src='images/dotnet/ideas.jpg')
+    include advancelearning
+  section.slide
+    header
+      h1 Asignación de proyectos
+    article
+      p Como propósito y parte fundamental del taller tenemos la aplicación del conocimiento en proyectos reales.
+      h2 Objetivo
+      p Simular el ambiente real de trabajo en un proyecto de software de la empresa u organización.
+      h2 Resultado esperado
+      p Haber demostrado, al final del curso, que su conocimiento fue de utilidad para la empresa u organización.
+      h2 Etapas importantes
+      ul
+        li Definición del ciclo de vida del proyecto
+        li Diseño
+        li Arquitectura
+        li Desarrollo
+        li Pruebas
+        li Instalación
+    include advancelearning
+  section.slide
+    header.visualstudio
+      h1 Introducción a la programación
+    article.chapter
+      .center
+        br
+        br
+        br
+        img(src='images/dotnet/csharp.png')
+        br
+        br
+        br
+    include advancelearning
+  section.slide
+    header
+      h1 C#
+    article
+      h2 Sobre C#
+      ul
+        li Elegante
+        li Tipado
+        li Seguro
+        li Orientado a objetos
+        li Popular
+      h2 ¿Para qué se puede usar?
+      ul
+        li Aplicaciones Windows
+        li Servicios Web
+        li Componentes distribuidos
+        li Librerías
+        li Aplicaciones cliente-servidor
+        li Aplicaciones de bases de datos
+        li ASP
+        li Muchas cosas más...
+      h2 Visual C#
+      ul
+        li Es un avanzado editor de código
+        li Herramientas de diseño avanzadas
+        li Debuger integrado
+        li Muchas otras características importantes
+      h2 Ventajas
+      ul
+        li Muy expresivo
+        li Simple y facil de aprender
+        li El uso de { } y ; lo hace muy familiar para desarrolladores de c, c++, java, etc.
+        li LINQ
+        li Etc.
+    include advancelearning
+  section.slide
+    header
+      h1 Conceptos de Orientación a objetos
+    article
+      h2 OOP
+      p Es un paradigma de programación que representa los conceptos como objetos. Contienen atributos que describen al objeto. Además de procedimientos, conocidos como métodos que describen el comportamiento.
+      p Un objeto es la instancia de una clase.
+      .row
+        .column
+          img.soldier(src='images/dotnet/soldier.jpg')
+        .column
+          h3 Atributos
+          ul
+            li Armas
+            li Arma seleccionada
+            li Daño
+            li Velocidad
+            li Posición
+          h3 Métodos
+          ul
+            li Atacar
+            li Correr
+            li Cambiar arma
+            li Recivir daño
+            li Morir
+      h2 ¿Cuales pueden ser los atributos y métodos de una clase de tipo Moto?
+      .row
+        .column
+          img.soldier(src='images/dotnet/moto.jpg')
+        .column
+          ul
+            li ¿Atributos?
+            li ¿Métodos?
+      h2 ¿Y los de los objetos?
+        .center
+          img.soldier(src='images/dotnet/honda.jpg')
+        .center
+          img.soldier(src='images/dotnet/harley.jpg')
+    include advancelearning
+  section.slide
+    header
+      h1 Comentarios
+    article
+      ul
+        li En linea //
+        li
+          | Clásico /* Este es un comentario, 
+          br
+          | puede ser de varias lineas */
+        li Documentación (metadatos) ///
+      .center
+        img.soldier(src='images/dotnet/comments.gif')
+    include advancelearning
+  section.slide
+    header
+      h1 Tipos de datos
+    article      
+      .center
+        img.soldier(src='images/dotnet/datos.png')
+    include advancelearning
+  section.slide
+    header
+      h1 Otros conceptos importantes
+    article      
+      h2 Conceptos de OOP
+      ul
+        li Encapsulamiento
+        li Abstraciión
+        li Polimorfismo
+        li Herencia
+        li Interfaz
+      h2 Arquitectura
+      .center
+        img.soldier(src='images/dotnet/architecture.png')
+    include advancelearning  
+  section.slide
+    header
+      h1 Práctica 1
+    article
+      h2 Visor de imágenes
+      p En este tutorial, compilará un programa que carga una imagen de un archivo y la muestra en una ventana. Aprenderá a arrastrar controles como botones y cuadros de imagen en el formulario, establecer sus propiedades y utilizar los contenedores para cambiar el tamaño del formulario de manera fluida. También empezará a escribir código. Aprenderá a:
+      ul
+        li Cree un nuevo proyecto.
+        li Probar (depurar) una aplicación.
+        li Agregar controles básicos, como casillas y botones, a un formulario.
+        li Colocar controles en un formulario mediante los diseños.
+        li Agregar los cuadros de diálogo Abrir archivo y Color a un formulario.
+        li Escribir código mediante IntelliSense y fragmentos de código.
+        li Escribir métodos de control de eventos.
+      .center
+        img(src='images/dotnet/visor.png')
+      .center
+        a(href='http://msdn.microsoft.com/es-ES/library/vstudio/dd492135?lc=3082', target='_blank') Práctica 1 en MSDN
+    include advancelearning
+  section.slide
+    header
+      h1 Práctica 2
+    article
+      h2 Crear una prueba matemática cronometrada
+      p En este tutorial, se compila un juego de prueba matemática en el que el jugador debe responder a cuatro problemas aritméticos aleatorios en un tiempo especificado. Aprenderá a:
+      ul
+        li Generar números aleatorios mediante la clase Random.
+        li Generar eventos que se producirán en un momento concreto con un control Timer.
+        li Controlar el flujo del programa con instrucciones if else.
+        li Realizar operaciones aritméticas básicas en el código.
+      .center
+        img(src='images/dotnet/mate.png')
+      .center
+        a(href='http://msdn.microsoft.com/es-ES/library/vstudio/dd492172', target='_blank') Práctica 2 en MSDN
+    include advancelearning
+  section.slide
+    header
+      h1 Práctica 3
+    article
+      h2 Crear un juego de formar parejas
+      p En este tutorial, compilará un juego de formar parejas en el que el jugador debe buscar las coincidencias entre pares de iconos ocultos. Aprenderá a:
+      ul
+        li Usar un objeto List para contener objetos.
+        li Usar un bucle foreach en Visual C# o un bucle For Each en Visual Basic.
+        li Realizar el seguimiento del estado de un formulario mediante variables de referencia.
+        li Compilar un controlador de eventos que se pueda usar con varios objetos.
+        li Hacer que un temporizador se active una vez después de iniciarse.
+      .center
+        img(src='images/dotnet/game.png')
+      .center
+        a(href='http://msdn.microsoft.com/es-ES/library/vstudio/dd492172', target='_blank') Práctica 3 en MSDN
+    include advancelearning
+  section.slide
+    header
+      h1 Primer etapa de desarrollo
+    article
+      h2 Arquitectura de la solución
+      p ¿Qué hace un arquitecto de software?
+      .center
+        img(src='images/dotnet/architect.jpg')      
+    include advancelearning
+
+
+
+
+
+

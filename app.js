@@ -35,6 +35,12 @@ if ('development' == app.get('env')) {
 app.get('/', routes.index);
 app.get('/404', routes.notfound);
 app.get('/android', routes.android);
+app.get('/dotnet', routes.dotnet);
+app.get('/oraclemanager', routes.oraclemanager);
+app.get('/web', routes.web);
+
+app.get('/students', routes.listStudents);
+app.post('/student', routes.addStudent);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('GnA listening on port ' + app.get('port'));
