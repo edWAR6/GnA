@@ -21,8 +21,12 @@ exports.oraclemanager = function(req, res){
   res.render('oraclemanager');
 };
 
-exports.web = function(req, res){
+exports.webDotNet = function(req, res){
   res.render('web');
+};
+
+exports.web = function(req, res){
+  res.render('web2');
 };
 
 exports.listStudents = function(req, res){

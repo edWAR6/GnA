@@ -16,7 +16,7 @@ var app = express(),
 app.set('port', process.env.PORT || 3001);
 app.set('views', __dirname + '/views');
 app.set('view engine', 'jade');
-app.use(express.favicon("public/images/favicon.ico"));
+app.use(express.favicon("public/images/GnA_web.png"));
 app.use(express.logger('dev'));
 app.use(express.bodyParser());
 app.use(express.methodOverride());
@@ -37,6 +37,7 @@ app.get('/404', routes.notfound);
 app.get('/android', routes.android);
 app.get('/dotnet', routes.dotnet);
 app.get('/oraclemanager', routes.oraclemanager);
+app.get('/webDotNet', routes.webDotNet);
 app.get('/web', routes.web);
 
 app.get('/students', routes.listStudents);
