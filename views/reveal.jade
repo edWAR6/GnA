@@ -1,0 +1,25 @@
+//- GnA Eduardo Oviedo Blanco
+//- eduardo.oviedo@gnastudio.net
+
+doctype html
+html(lang='en')
+  head  
+    block head
+      meta(charset='utf-8')      
+      meta(name='viewport', content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no')    
+      link(rel='stylesheet', href='stylesheets/reveal.min.css')      
+  body
+    block body
+      //if lt IE 7
+        p.chromeframe.
+          You are using an <strong>outdated</strong> browser.
+          Please <a href="http://browsehappy.com/">upgrade your browser</a> or
+          <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a>
+          to improve your experience.
+      .reveal
+        .slides
+          block content            
+      script(src='javascripts/vendor/head.min.js')    
+      script(src='javascripts/vendor/reveal.min.js')
+      script(type='text/javascript').      
+        Reveal.initialize({slideNumber: true, center: true, transition: 'linear',previewLinks: true, parallaxBackgroundImage: 'images/web2/html5.png', parallaxBackgroundSize: '2100px 900px'});

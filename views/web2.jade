@@ -1,0 +1,433 @@
+//- GnA Eduardo Oviedo Blanco
+//- eduardo.oviedo@gnastudio.net
+
+extends reveal
+block append head
+  title HTML5, CSS3 y Javascript
+  link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css')
+  link#theme(rel='stylesheet', href='stylesheets/serif.css')
+  link(rel='stylesheet', href='stylesheets/web2.css')
+block content
+  section.slide
+    h1 ¡Bienvenidos!
+    h2 Eduardo Oviedo Blanco    
+    .row
+      .col-md-6
+        p CEO y developer Games 'n Apps, instructor en Advance Learning
+        br
+        .row
+          .col-md-12
+            span eduardo.oviedo@gnastudio.net        
+        .row
+          .col-md-4
+            img.noBorder(src='https://g.twimg.com/Twitter_logo_blue.png')
+          .col-md-6
+            br
+            @edWAR6
+        .row
+          .col-md-4
+            img.noBorder(src='http://skypeblogs.files.wordpress.com/2013/09/skype-logo-feb_2012_rgb_500.png?w=300')
+          .col-md-6
+            br
+            span edWAR6
+      .col-md-6
+        img(src='images/GnA_small.jpg')
+        img(src='images/web2/advancelearning.gif')
+  section
+    section.slide
+      h2 Contenido del curso
+      h3 Día 1
+      ol
+        li Introducción a HTML y CSS
+        li Creación y estilo de páginas HTML5
+        li Introducción a Javascript
+    section.slide
+      h3 Día 2
+      ol
+        li Formularios WEB y validación de datos
+        li Comunicación con fuentes de datos remotos
+        li Estilo de HTML5 usando CSS3
+        li Primer evaluación
+    section.slide
+      h3 Día 3
+      ol
+        li Creación de objetos y métodos usando JavaScript
+        li Creación de páginas WEB interactivas usando API's de HTML5
+        li Soporte offline en aplicaciones web con HTML5
+        li Segunda evaluación
+    section.slide
+      h3 Día 4
+      ol
+        li Creación de gráficos avanzados
+        li tercera evaluación
+    section.slide
+      h3 Día 5
+      ol
+        li Animación de interfaces WEB
+        li Web Sockets
+        li Cuarta evaluación
+    section.slide
+      h3 Día 6
+      ol
+        li Web Workers
+        li Inicia proyecto final
+    section.slide
+      h3 Día 7
+      ol
+        li Termina proyecto final
+        li Evaluación final
+  section(data-background='#bb00bb')
+    h2 Expectativas del curso
+    ul
+      li ¿Qué espera aprender?
+      li ¿Cuales de los temas domina o conoce?
+      li ¿Qué necesita en su trabajo?
+      li ¿Hasta dónde le gustaría llegar?
+      li ¿Dónde necesita ayuda?
+    img(src='images/dotnet/expectations.jpg')
+  section(data-background='#417203')
+    h1 Introducción a HTML y CSS    
+  section
+    section.slide
+      h2 HTML
+      h3 Historia
+      ul
+        li Es un lenguaje "markup" que convina texto e instrucciones
+        li "Markup" proviene del término "marking up", que se usaba en la creación de manuscitos
+        li Sus siglas significan HyperText Markup Language. Y es el lenguaje oficial de la Web desde 1990
+        li Guerra de los browsers
+    section.slide
+      h3 Ejemplo
+      img(src='images/web/html1.png')
+      br
+      a(href='http://www.w3schools.com/html/tryit.asp?filename=tryhtml_intro', target='_blank') Ejemplo...
+    section.slide
+      h3 HTML Tags
+      ul
+        li Son palabras reservadas rodeadas por '<' y '>'
+        li Usualmente vienen en pares, uno que abre y otro que cierra
+      br
+      img(src='images/web/tag1.png')
+    section.slide
+      h3 Web browsers
+      ul
+        li Software que interpreta el HTML y otros lenguajes y los muestra como páginas web
+      br
+      img(src='images/web/browser.jpg')
+    section.slide
+      h3 Estructura
+      br
+      img(src='images/web/html2.png')
+    section.slide
+      h3 Versiones de HTML
+      br
+      img(src='images/web/html3.png')
+    section.slide
+      h3 Declaración del 
+        i &lt;!DOCTYPE&gt;
+      p Le indica al browser la versión del documento a interpretar
+      br
+      img(src='images/web/doctypes.png')
+    section.slide
+      h2 Práctica guiada con el instructor
+      p Haciendo uso de cualquier editor de texto, cree una página HTML5 con las siguientes partes
+      ul
+        li Un título con su nombre (h1)
+        li Un parrafo con un "Hola mundo" (p)
+        li Un link a un sitio externo (a href)
+      br
+      img(src='images/web/practica1.png')
+    section.slide
+      h3 HTML Headings
+      p El tamáño de los headings va desde el 1 al 6.
+      br
+      img(src='images/web2/headings.png')
+      br
+      h4 Práctica
+      p Cree un html con los titulos, con los tamaños del 1 al 6.
+    section.slide
+      h3 Párrafos o "Paragraph"
+      p En HTML los párrafos se definen con el tag "p".
+      img(src='images/web2/paragraph.png')
+      br
+      h4 Práctica
+      p Cree un html con dos párrafos, uno corto y uno largo.
+    section.slide
+      h3 Links
+      p Los links en HTML se definen con el tag "a".
+      img(src='images/web2/link.png')
+      br
+      h4 Práctica
+      p Cree un html con dos links, uno que me lleve a http://microsoft.com y el otro a http://google.com.
+      p El link de Google debe de abrir en otra página, investigue como hacerlo.
+    section.slide
+      h3 IMG o imágenes
+      p Las imágenes en HTML se definen con el tag "img". Además se puede usar el texto alternativo "alt" e indicar el alto y ancho de la imágen.      
+      img(src='images/web2/img.png')
+      br
+      h4 Práctica
+      p Descargue de internet una imágen y agréguela a un documento HTML. Asegúrese de colocar un valor al atributo "alt" y de asignar un ancho y alto.
+    section.slide
+      h3 Atributos de los objetos HTML
+      p Cada objeto en el HTML cuenta con diferentes atributos, los cuales al algunas ocasiones son necesarios para que el objeto funcione correctamente y en otras son opcionales.
+      ul
+        li id: identifica a un objeto de manera única.
+        li name: Asigna un nombre a un objeto.
+        li alt: Especifíca un texto alternativo.
+        li disabled: Indica que el control está inactivo.
+        li href: Define la dirección de un link.
+        li src: Define la dirección de una imagen.
+        li title: Define información extra del objeto, mostrado como un tooltip.
+        li value: Define el valor o contenido de un elemento.
+        li text: Define el texto interno de un objeto o elemento.
+  section
+    section.slide
+      h2 CSS
+      ul
+        li 
+          b CSS
+          |  significa "Cascading Style Sheet".
+        li Define cómo se ven los elementos del HTML.
+        li Existen desde HTML 4.0.
+        li Pueden ahorrar muchísimo trabajo.
+        li Se almacenan en archivos con la extención ".css".
+    section.slide
+      h2 Ejemplo
+      .row
+        .col-md-6
+          img(src='images/web/css.png')
+        .col-md-6
+          img(src='images/web/css1.png')
+      br
+      a(href='http://www.w3schools.com/css/tryit.asp?filename=trycss_default', target='_blank') Ejemplo...
+    section.slide
+      h2 Syntax
+      br
+      img(src='images/web/selector.png')
+      br
+      img(src='images/web/syntax.png')
+    section.slide
+      h2 Comentarios
+      br
+      img(src='images/web/comments.png')
+    section.slide
+      h2 Selectores
+      p Mecanismo de selección y de aplicación de filtros para los estilos.
+      h3 Selector de elemento (tipo)
+      br
+      img(src='images/web/tipo.png')
+    section.slide
+      h3 Selector de ID (#)
+      br
+      img(src='images/web/ID.png')
+    section.slide
+      h3 Selector de Clase (.)
+      br
+      img(src='images/web/clase.png')
+      img(src='images/web/clase2.png')
+    section.slide
+      h3 Agrupaciones
+      br
+      img(src='images/web/grupos.png')
+    section.slide
+      img(src='images/web/grupos2.png')
+    section.slide
+      h2 Práctica guiada con el instructor
+      p Cree el html del ejemplo anterior en un documento html.
+    section.slide
+      h2 Inclusión del archivo externo de CSS
+      p Para mejorar la calidad del producto y facilitar el manteniemiento, el css se separa en otro archivo con la extención ".css".
+      p Para incorporar la referencia en el HTML se utiliza el siguiente TAG.
+      br
+      img(src='images/web/link.png')
+    section.slide
+      h2 Cascada de estilos
+      p Es posible que una página contenga más de un estilo definido, para esto existe un nivel de prioridad establecido.
+      ol
+        li Estilos por defecto del browser.
+        li Archivos .css externos.
+        li Código .css internos.
+        li Estilos in line.
+    section.slide
+      h2 Práctica
+      p Haciendo uso del HTML de la práctica anterior, haga los siguientes estilos en un archivo .css externo.
+      ol
+        li Color de fondo #b0c4de. Con la propiedad background-color.
+        li Una regla a los tipos h1 que haga la propiedad color #00ff00.
+        li Un parrafo "Hola mundo" con una clase que tenga la propiedad margen-top en 100px.
+        li Un parrafo "Hola mundo 2" con una clase que tenga la propiedad margen-left en 50px.
+        li Finalmente al link, quitele la linea de abajo, con la propiedad text-decoration, la cual debe tener el valor "none".  
+  section(data-background='#ff0000')
+    h1 Reto de HTML y CSS
+  section
+    section.slide
+      p Reto 1: Recree la siguiente página usando HTML y CSS.
+      img(src='images/web2/challenge1.png')    
+    section.slide
+      p Reto 2: Recree la siguiente página usando HTML y CSS.
+      img(src='images/web2/challenge2.png')      
+  section(data-background='salmon')
+    h1 JavaScript
+  section
+    section.slide
+      h2 HTML, CSS y JavaScript
+      p JavaScript se ejecuta en un navegador, junto con HTML y CSS. Funciona por medio del tag "script"
+    section.slide
+      h2 Script interno
+      br
+      img(src='images/web2/script1.png')
+    section.slide
+      h2 Script externo
+      br
+      img(src='images/web2/script2.png')
+    section.slide
+      h2 Práctica guiada
+      p Siguiento los pasos del instructor, cree un Hola Mundo haciendo uso de JS, de manera interna y externa.
+    section.slide
+      h2 Variables
+      p Una variable es un espacio en memoria que almacena un dato u objeto.
+    section.slide
+      h2 Práctica    
+      p Siguiendo el ejemplo a continuación, cree una variable y asígnele el valor ingresado por el usuario.
+      br
+      img(src='images/web2/script3.png')
+    section.slide
+      h2 Inicialización
+      br
+      img(src='images/web2/script5.png')
+      br
+      img(src='images/web2/script6.png')
+    section.slide
+      h2 Declaración
+      br
+      img(src='images/web2/script4.png')    
+    section.slide
+      h2 Asignación
+      br
+      img(src='images/web2/script7.png')
+    section.slide
+      h2 Práctica
+      p Haciendo uso de lo aprendido, cree un programa que haga lo siguiente: 
+      ol
+        li Inicialice una variable "nombre" con su propio nombre
+        li Declare una variable edad
+        li Que pregunte al usuario su edad
+        li Debe asignar la edad ingresada en la variable "edad"
+        li Y finalmente que alerte al usuario su nombre y su edad
+    section.slide
+      h2 if
+      p Evalúa una condición y si se cumple, ejecuta el código contenido.
+      br
+      img(src='images/web2/if.png')
+    section.slide
+      h2 if else
+      p Evalúa una condición y si se cumple, ejecuta el código contenido, y si no, ejecuta el segundo segmento de código.
+      br
+      img(src='images/web2/ifelse.png')
+    section.slide
+      h2 while
+      p Repite un blóque de código mientras que la condición sea verdad.
+      br
+      img(src='images/web2/while.png')
+    section.slide
+      h2 for
+      p Repite un blóque de código según sus tres principales partes. Inicialización, condición y expresión.
+      br
+      img(src='images/web2/for.png')
+    section.slide
+      h2 Práctica guiada
+      p Con ayuda del instructor, cree un programa que haga lo siguiente:
+      ol
+        li Debe infinitamente (usando un while), preguntar su nombre.
+        li Si su nombre es el correcto, deja de preguntarlo, debe imprimir de una a una las letras de su nombre en la consola (for).
+        li Si su nombre no es el correcto sigue preguntandolo.
+    section.slide
+      h2 function
+      p Se entiende por funcion como una variable que almacena una lista de instrucciones.
+      br
+      img(src='images/web2/function.png')
+    section.slide
+      h2 Invocando a una función
+      br
+      img(src='images/web2/function2.png')
+    section.slide
+      h2 Práctica
+      p Haciendo uso de lo aprendido, cree un programa que sume, reste y multiplique dos números, previamente inicializados. Asegurese de alertar al usuario los tres resultados.
+    section.slide
+      h2 Arrays o arreglos
+      p Un arreglo es una lista de cualquier tipo de dato, incluyendo a otros arreglos.
+      p Cada item en el arreglo tiene un indice que puede ser usado para leer o asignar dicho valor.
+      br
+      img(src='images/web2/array.png')
+    section.slide
+      h2 Lectura y escritura
+      br
+      h3 Lectura
+      img(src='images/web2/array2.png')
+      br
+      h3 Escritura
+      img(src='images/web2/array3.png')
+    section.slide
+      h2 Otras propiedades y métodos del arreglo
+      ul
+        li .length
+        li .push('hola')
+        li .pop()
+    section.slide
+      h2 Práctica
+      p Analice el siguiente código y explique qué hace linea por linea, e indique cuantos nombres quedan en el arreglo.
+      br
+      img(src='images/web2/code.png')
+
+
+  //- section(data-background='rgba(0, 100, 100, 0.2)')
+  //-   section
+  //-     h2 Background applied to stack
+  //-   section
+  //-     h2 Background applied to stack
+  //-   section(data-background='rgba(100, 0, 0, 0.2)')
+  //-     h2 Background applied to slide inside of stack
+  //- section(data-background-transition='slide', data-background='assets/image1.png', style='background: rgba(255,255,255,0.9);')
+  //-   h2 Background image
+  //- section
+  //-   section(data-background-transition='slide', data-background='assets/image1.png', style='background: rgba(255,255,255,0.9);')
+  //-     h2 Background image
+  //-   section(data-background-transition='slide', data-background='assets/image1.png', style='background: rgba(255,255,255,0.9);')
+  //-     h2 Background image
+  //- section(data-background='assets/image2.png', data-background-size='100px', data-background-repeat='repeat', data-background-color='#111', style='background: rgba(255,255,255,0.9);')
+  //-   h2 Background image
+  //-   pre.
+  //-     \ndata-background-size="100px" data-background-repeat="repeat" data-background-color="#111"            
+  //- section(data-background='#888888')
+  //-   h2 Same background twice (1/2)
+  //- section(data-background='#888888')
+  //-   h2 Same background twice (2/2)
+  //- section
+  //-   section(data-background='#417203')
+  //-     h2 Same background twice vertical (1/2)
+  //-   section(data-background='#417203')
+  //-     h2 Same background twice vertical (2/2)
+  //- section(data-background='#934f4d')
+  //-   h2 Same background from horizontal to vertical (1/3)
+  //- section
+  //-   section(data-background='#934f4d')
+  //-     h2 Same background from horizontal to vertical (2/3)
+  //-   section(data-background='#934f4d')
+  //-     h2 Same background from horizontal to vertical (3/3)
+
+
+block append body
+  script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js')
+  // script.
+  //   var name = 'lol';
+  //   var preguntar = true;
+  //   while(preguntar){
+  //     var temp = prompt('lol?');
+  //     if (temp === name) {
+  //       preguntar = false;
+  //     }else{
+  //       preguntar = true;
+  //     };
+  //   };
+
+
