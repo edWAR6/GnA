@@ -23,7 +23,7 @@ block content
             img.noBorder(src='https://g.twimg.com/Twitter_logo_blue.png')
           .col-md-6
             br
-            @edWAR6
+            span @edWAR6
         .row
           .col-md-4
             img.noBorder(src='http://skypeblogs.files.wordpress.com/2013/09/skype-logo-feb_2012_rgb_500.png?w=300')
@@ -378,6 +378,317 @@ block content
       p Analice el siguiente código y explique qué hace linea por linea, e indique cuantos nombres quedan en el arreglo.
       br
       img(src='images/web2/code.png')
+  section(data-background='#D4E157')    
+    h1 El DOM
+  section
+    section.slide
+      h2 ¿Qué es el Document Object Model?
+      p Es un estándar del W3C, plataforma que permite a los scripts acceder y actualizar contenido, estructura y estilo del documento html.
+    section.slide
+      h2 DOM
+      img(src='images/web2/dom.gif')
+    section.slide
+      h2 ¿Qué se puede hacer con JavaScript?
+      ul
+        li Se pueden cambiar los elementos de la página
+        li Se pueden cambiar los atributos de los elementos
+        li Se pueden cambiar los CSS
+        li JS puede reaccionar a eventos en los elementos
+        li JS puede crear nuevos eventos a los elementos
+    section.slide
+      h2 Manipulación del DOM
+      img(src='images/web2/dom2.png')
+      br
+      a(href="http://www.w3schools.com/js/tryit.asp?filename=tryjs_dom_method") Ejemplo ...
+    section.slide
+      h2 document.getElementById
+      p Es la manera más inmediata de acceder a un elemento del DOM.
+      h3 Otras maneras:
+      ul
+        li document.getElementsByName
+        li document.getElementsByTagName
+        li document.getElementsByClassName
+    section.slide
+      h2 Práctica (1 de 3)
+      p Cree una página con los siguientes controles
+      ul
+        li Un párrafo (p) con el id "principal"
+        li Dos párrafos con el nombre "segundario"
+        li Tres párrafos con la classe "negrita"
+    section.slide
+      h2 Práctica (2 de 3)
+      p Luego aplique el siguiente estilo
+      ul
+        li A todos los párrafos, centrelos horizontalmente
+        li Al parrafo con la clase "negrita" póngalos en negrita        
+        li Al parrafo con el id "principal" cambiele el tamaño a 14px y color azul
+    section.slide
+      h2 Práctica (3 de 3)
+      p Usando JavaScript haga lo siguiente
+      ul
+        li Imprima en la consola el contenido (innerHTML) del párrafo con el id "principal"
+        li Imprima en consola la cantidad de párrafos con el nombre "segundario"
+        li Imprima en consola la cantidad de caracteres del párrafo con la clase "negrita"
+        li Imprima en consola la cantidad total de párrafos
+    section.slide
+      h2 Modificar elementos y sus propiedades
+      p También se puede cambiar el contenido, algunos ejemplos son:
+      ul
+        li element.innerHTML=
+        li element.attribute=
+        li element.setAttribute(attribute,value)
+        li element.style.property=
+    section.slide
+      h2 Ejemplo
+      p De esta manera se puede imprimir en el documento la fecha actual.
+      br
+      span document.write(Date());
+    section.slide
+      h2 Práctica
+      p Haciendo uso de getElementById y innerHTML, cambie el contenido del párrafo con el id "principal"
+      p Analice las posibilidades, si se utilizan variables para almacenar el elemento
+    section.slide
+      h2 Práctica
+      p Cree un documento html y agréguele una imagen con un id. Luego por medio del JS, cambie la imagen por otra (.src=)
+    section.slide
+      h2 Práctica
+      p Cree un documento html con un párrafo "Hola mundo". Agregue dos clases al css "grande" y "pequeno". Haciendo uso de JS cambie el atributo class al css (.setAttribute("class", "pequeno");)
+    section.slide
+      h2 Práctica
+      p Cree un documento con un div de 100px de ancho y alto. Haciendo uso de JS, agreguele la propiedad "backgroundColor" (.style.backgroundColor="red";)
+    section.slide
+      h2 Agregando y quitando elementos
+      p Es posible agregar y eliminar cualqueir elemento o grupo de elementos utilizando los siguientes métodos:
+      ul
+        li document.createElement()
+        li document.removeChild()
+        li document.appendChild()
+        li document.replaceChild()
+    section.slide
+      h2 Ejemplo, creando y agregando elementos
+      img(src='images/web2/dom3.png')
+      br
+      img(src='images/web2/dom4.png')
+    section.slide
+      h2 Ejemplo, removiendo elementos
+      img(src='images/web2/dom5.png')
+      br
+      img(src='images/web2/dom6.png')
+      br
+      img(src='images/web2/dom7.png')
+      br
+      img(src='images/web2/dom8.png')
+  section
+    section.slide
+      h2 Events Handlers
+    section.slide
+      h2 Eventos en el HTML
+      img(src='images/web2/event1.png')
+    section.slide
+      h2 Eventos del html al JS
+      img(src='images/web2/event2.png')
+    section.slide
+      h2 Eventos en el JS
+      img(src='images/web2/event3.png')
+    section.slide
+      h2 Otros tipos de eventos
+      p Existen muchso otros tipos de eventos, algunos son:
+      br
+      a(href="http://www.w3schools.com/js/tryit.asp?filename=tryjs_events_mouseover") onmouseover y onmouseout
+      br
+      a(href="http://www.w3schools.com/js/tryit.asp?filename=tryjs_events_mousedown") onmousedown, onmouseup y onclick
+      br
+      a(href="http://www.w3schools.com/js/tryit.asp?filename=tryjs_onchange") onchange
+    section.slide
+      h2 Práctica
+      p Haciendo uso de lo aprendido cree una página con un campo de texto (input type="text") y tres botones.
+      p Al hacer click en el botón "Agregar párrafo", en un div inferior, debe aparecer un párrafo nuevo con el texto que se ingresó en el campo de texto.
+      p Al hacer click en el botón "Agregar imagen", en el div inferior, debe aparecer la imágen especificada (por url).
+      p Al hacer click en el botón "Limpiar", se deben borrar todos los controles dentro del div.
+  section(data-background='#9FA8DA')
+    h1 Formularios
+  section
+    section.slide
+      h2 form
+      p El formulario se utiliza para recolectar los datos ingresados por el usuario.
+      p A este elemento se le ingresan otros de tipo input.
+      img(src='images/web2/form.png')
+      br
+      a(href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml_form_submit") Ejemplo...
+    section.slide
+      h2 El atributo Action
+      br
+      img(src='images/web2/form2.png')
+      br
+      p Define la acción a ser realizada por el formulario. Generalmente indica la dirección a la que llegarán los datos.
+    section.slide
+      h2 El atributo Method
+      br
+      img(src='images/web2/form3.png')
+      br
+      img(src='images/web2/form4.png')
+      br
+      p Especifica el método HTTP a usarse al hacer el envío de datos (GET, POST).      
+    section.slide
+      h2 El atributo Name en los inputs
+      p Para que los valores lleguen a su destino identificados es necesario agregar el atributo "name" a cada uno de sus campos.
+      img(src='images/web2/form5.png')
+    section.slide
+      h2 Práctica
+      p Con la ayuda del istructor, programe un formulario con el campo nombre y un campo de mensaje.
+      p Capture el evento submit del form, debe investigarlo. En este evento imprima en consola los dos valores que se ingresan.
+  section
+    section.slide
+      h1 Elementos del form
+    section.slide
+      h2 Elemento select
+      img(src='images/web2/select.png')
+      br
+      img(src='images/web2/select2.png')
+      br
+      a(href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml_elem_select") Ejemplo...
+    section.slide
+      h2 Elemento textarea
+      img(src='images/web2/area.png')
+      br
+      img(src='images/web2/area2.png')
+      br
+      a(href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml_elem_textarea") Ejemplo...
+    section.slide
+      h2 Tipos de input
+      ul
+        li text: Simple linea de texto
+        li password: Define una contraseña (******)
+        li submit: Botón que envía el formulario
+        li radio: Control de selección única
+        li checkbox: Control de multiple selección
+        li button: Un tipo de botón (no activa el form)
+        li otros...
+    section.slide
+      h2 Práctica
+      p Cree un formulario con todos los diferentes elementos y tipos de input, anteriormente indicados.
+  section(data-background='#D1C4E9')
+    h1 Comunicación externa
+  section
+    section.slide
+      h2 Práctica (1 de 4)
+      p Primero escuche la explicación de HTTP y de REST del instructor.
+    section.slide
+      h2 Práctica (2 de 4)
+      p Observe cómo el instructor crea en vivo, un servidor local para recibir los datos.
+    section.slide
+      h2 Práctica (3 de 4)
+      p Cree un formulario de búsqueda que haga un GET al URL indicado por el instructor.
+    section.slide
+      h2 Práctica (4 de 4)
+      p Cree un formulario de registro, que contenga su nombre y un mensaje que ejecute un POST al URL indicado por el instructor.
+  section(data-background='#80CBC4')
+    h1 HTML5 y CSS3
+    h2 5? 3?
+  section
+    section.slide
+      h2 HTML5
+      h3 ¿Qué hay de nuevo en HTML5?
+    section.slide
+      h2 El doctype
+      p El doctype es muy simple ahora.
+      img(src='images/web2/html52.png')
+    section.slide
+      h2 El charset
+      p El charset es muy simple también.
+      img(src='images/web2/html53.png')
+    section.slide
+      h2 Nuevos tipos de elementos
+      ul
+        li semantic: header, footer, article, section
+        li controls: number, date, time, calendar, range
+        li graphic: svg y canvas        
+        li multimedia: audio y video
+    section.slide
+      h2 Nuevos API's
+      ul
+        li Geolocation
+        li Drag and Drop
+        li Local Storage
+        li Application Cache
+        li Web Workers
+        li SSE
+    section.slide
+      h2 Nuevo layout
+      img(src='images/web2/layout.png')
+    section.slide
+      h2 Práctica
+      p Tomando en cuenta el nuevo layout de HTML5, reprodusca el ejemplo anterior en una página usando HTML5 y CSS3.
+      p Para crear el degradado, tome en cuenta el siguiente ejemplo.
+      img(src='images/web2/css3.png')
+    section.slide
+      h2 Nuevos tipos de input
+      ul
+        li color
+        li date
+        li color
+        li date
+        li datetime
+        li datetime-local
+        li email
+        li month
+        li number
+        li range
+        li search
+        li tel
+        li time
+        li url
+        li week
+    section.slide
+      h2 Nuevos atributos del input
+      ul
+        li autocomplete
+        li autofocus
+        li form
+        li formaction
+        li formenctype
+        li formmethod
+        li formnovalidate
+        li formtarget
+        li height and width
+        li list
+        li min and max
+        li multiple
+        li pattern (regexp)
+        li placeholder
+        li required
+        li step
+    section.slide
+      h2 Práctica
+      p Usando todos los nuevos tipos de input, cree un documento con un formulario, y experimente con los nuevos atributos.
+    section.slide
+      h2 Elementos personalizados
+      p Ahora es posible crear un elemento HTML5 totalmente personalizado.
+      img(src='images/web2/custom.png')
+      br
+      a(href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml5_browsers_myhero") Ejemplo ...
+    section.slide
+      h2 Práctica
+      p Haciendo uso de lo aprendido, cree un elemento HTML5 personalizado.
+      p Debe tener un degradado hacia la derecha de tres colores y debe medir un 50% del espacio disponible.      
+    section.slide
+      h2 Soporte
+      p Cuando un elemento no es soportado por el browser, es posible incluir el HTML opcional dentro de sus etiquetas.
+      img(src='images/web2/support.png')
+    section.slide
+      h2 Internet Explorer if
+      p Es posible usar códigos especiales en HTML5 para los clientes con navegadores viejos.
+      img(src='images/web2/ie.png')
+    section.slide
+      h2 Links de utilidad
+      a(href="http://modernizr.com/") Modernizr
+      br
+      a(href="http://html5test.com/") HTML5 test
+
+
+  section(data-background='#80CBC4')
+    h1 JavaScript OOP
+
 
 
   //- section(data-background='rgba(0, 100, 100, 0.2)')
