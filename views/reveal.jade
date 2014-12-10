@@ -7,7 +7,7 @@ html(lang='en')
     block head
       meta(charset='utf-8')      
       meta(name='viewport', content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no')    
-      link(rel='stylesheet', href='stylesheets/reveal.min.css')      
+      link(rel='stylesheet', href='/stylesheets/reveal.min.css')      
   body
     block body
       //if lt IE 7
@@ -18,8 +18,10 @@ html(lang='en')
           to improve your experience.
       .reveal
         .slides
-          block content            
-      script(src='javascripts/vendor/head.min.js')    
-      script(src='javascripts/vendor/reveal.min.js')
+          block content
+      script(src='http://code.jquery.com/jquery-1.9.1.js')      
+      script window.jQuery || document.write('<script src="/javascripts/vendor/jquery-1.9.1.min.js"><\\/script>')      
+      script(src='/javascripts/vendor/head.min.js')    
+      script(src='/javascripts/vendor/reveal.min.js')
       script(type='text/javascript').      
         Reveal.initialize({slideNumber: true, center: true, transition: 'linear',previewLinks: true, parallaxBackgroundImage: 'http://www.gnastudio.net/images/web2/HTML5.png', parallaxBackgroundSize: '2100px 900px'});

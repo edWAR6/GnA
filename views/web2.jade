@@ -5,8 +5,8 @@ extends reveal
 block append head
   title HTML5, CSS3 y Javascript
   link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css')
-  link#theme(rel='stylesheet', href='stylesheets/serif.css')
-  link(rel='stylesheet', href='stylesheets/web2.css')
+  link#theme(rel='stylesheet', href='/stylesheets/serif.css')
+  link(rel='stylesheet', href='/stylesheets/web2.css')
 block content
   section.slide
     h1 ¡Bienvenidos!
@@ -31,8 +31,8 @@ block content
             br
             span edWAR6
       .col-md-6
-        img(src='images/GnA_small.jpg')
-        img(src='images/web2/advancelearning.gif')
+        img(src='/images/GnA_small.jpg')
+        img(src='/images/web2/advancelearning.gif')
   section
     section.slide
       h2 Contenido del curso
@@ -84,7 +84,7 @@ block content
       li ¿Qué necesita en su trabajo?
       li ¿Hasta dónde le gustaría llegar?
       li ¿Dónde necesita ayuda?
-    img(src='images/dotnet/expectations.jpg')
+    img(src='/images/dotnet/expectations.jpg')
   section(data-background='#417203')
     h1 Introducción a HTML y CSS    
   section
@@ -98,7 +98,7 @@ block content
         li Guerra de los browsers
     section.slide
       h3 Ejemplo
-      img(src='images/web/html1.png')
+      img(src='/images/web/html1.png')
       br
       a(href='http://www.w3schools.com/html/tryit.asp?filename=tryhtml_intro', target='_blank') Ejemplo...
     section.slide
@@ -107,27 +107,27 @@ block content
         li Son palabras reservadas rodeadas por '<' y '>'
         li Usualmente vienen en pares, uno que abre y otro que cierra
       br
-      img(src='images/web/tag1.png')
+      img(src='/images/web/tag1.png')
     section.slide
       h3 Web browsers
       ul
         li Software que interpreta el HTML y otros lenguajes y los muestra como páginas web
       br
-      img(src='images/web/browser.jpg')
+      img(src='/images/web/browser.jpg')
     section.slide
       h3 Estructura
       br
-      img(src='images/web/html2.png')
+      img(src='/images/web/html2.png')
     section.slide
       h3 Versiones de HTML
       br
-      img(src='images/web/html3.png')
+      img(src='/images/web/html3.png')
     section.slide
       h3 Declaración del 
         i &lt;!DOCTYPE&gt;
       p Le indica al browser la versión del documento a interpretar
       br
-      img(src='images/web/doctypes.png')
+      img(src='/images/web/doctypes.png')
     section.slide
       h2 Práctica guiada con el instructor
       p Haciendo uso de cualquier editor de texto, cree una página HTML5 con las siguientes partes
@@ -136,26 +136,26 @@ block content
         li Un parrafo con un "Hola mundo" (p)
         li Un link a un sitio externo (a href)
       br
-      img(src='images/web/practica1.png')
+      img(src='/images/web/practica1.png')
     section.slide
       h3 HTML Headings
       p El tamáño de los headings va desde el 1 al 6.
       br
-      img(src='images/web2/headings.png')
+      img(src='/images/web2/headings.png')
       br
       h4 Práctica
       p Cree un html con los titulos, con los tamaños del 1 al 6.
     section.slide
       h3 Párrafos o "Paragraph"
       p En HTML los párrafos se definen con el tag "p".
-      img(src='images/web2/paragraph.png')
+      img(src='/images/web2/paragraph.png')
       br
       h4 Práctica
       p Cree un html con dos párrafos, uno corto y uno largo.
     section.slide
       h3 Links
       p Los links en HTML se definen con el tag "a".
-      img(src='images/web2/link.png')
+      img(src='/images/web2/link.png')
       br
       h4 Práctica
       p Cree un html con dos links, uno que me lleve a http://microsoft.com y el otro a http://google.com.
@@ -163,7 +163,7 @@ block content
     section.slide
       h3 IMG o imágenes
       p Las imágenes en HTML se definen con el tag "img". Además se puede usar el texto alternativo "alt" e indicar el alto y ancho de la imágen.      
-      img(src='images/web2/img.png')
+      img(src='/images/web2/img.png')
       br
       h4 Práctica
       p Descargue de internet una imágen y agréguela a un documento HTML. Asegúrese de colocar un valor al atributo "alt" y de asignar un ancho y alto.
@@ -195,42 +195,42 @@ block content
       h2 Ejemplo
       .row
         .col-md-6
-          img(src='images/web/css.png')
+          img(src='/images/web/css.png')
         .col-md-6
-          img(src='images/web/css1.png')
+          img(src='/images/web/css1.png')
       br
       a(href='http://www.w3schools.com/css/tryit.asp?filename=trycss_default', target='_blank') Ejemplo...
     section.slide
       h2 Syntax
       br
-      img(src='images/web/selector.png')
+      img(src='/images/web/selector.png')
       br
-      img(src='images/web/syntax.png')
+      img(src='/images/web/syntax.png')
     section.slide
       h2 Comentarios
       br
-      img(src='images/web/comments.png')
+      img(src='/images/web/comments.png')
     section.slide
       h2 Selectores
       p Mecanismo de selección y de aplicación de filtros para los estilos.
       h3 Selector de elemento (tipo)
       br
-      img(src='images/web/tipo.png')
+      img(src='/images/web/tipo.png')
     section.slide
       h3 Selector de ID (#)
       br
-      img(src='images/web/ID.png')
+      img(src='/images/web/ID.png')
     section.slide
       h3 Selector de Clase (.)
       br
-      img(src='images/web/clase.png')
-      img(src='images/web/clase2.png')
+      img(src='/images/web/clase.png')
+      img(src='/images/web/clase2.png')
     section.slide
       h3 Agrupaciones
       br
-      img(src='images/web/grupos.png')
+      img(src='/images/web/grupos.png')
     section.slide
-      img(src='images/web/grupos2.png')
+      img(src='/images/web/grupos2.png')
     section.slide
       h2 Práctica guiada con el instructor
       p Cree el html del ejemplo anterior en un documento html.
@@ -239,7 +239,7 @@ block content
       p Para mejorar la calidad del producto y facilitar el manteniemiento, el css se separa en otro archivo con la extención ".css".
       p Para incorporar la referencia en el HTML se utiliza el siguiente TAG.
       br
-      img(src='images/web/link.png')
+      img(src='/images/web/link.png')
     section.slide
       h2 Cascada de estilos
       p Es posible que una página contenga más de un estilo definido, para esto existe un nivel de prioridad establecido.
@@ -258,14 +258,14 @@ block content
         li Un parrafo "Hola mundo 2" con una clase que tenga la propiedad margen-left en 50px.
         li Finalmente al link, quitele la linea de abajo, con la propiedad text-decoration, la cual debe tener el valor "none".  
   section(data-background='#ff0000')
-    h1 Reto de HTML y CSS
-  section
+    section
+      h1 Evaluación  
     section.slide
-      p Reto 1: Recree la siguiente página usando HTML y CSS.
-      img(src='images/web2/challenge1.png')    
+      p Parte 1: Recree la siguiente página usando HTML y CSS.
+      img(src='/images/web2/challenge1.png')    
     section.slide
-      p Reto 2: Recree la siguiente página usando HTML y CSS.
-      img(src='images/web2/challenge2.png')      
+      p Parte 2: Recree la siguiente página usando HTML y CSS.
+      img(src='/images/web2/challenge2.png')      
   section(data-background='salmon')
     h1 JavaScript
   section
@@ -275,11 +275,11 @@ block content
     section.slide
       h2 Script interno
       br
-      img(src='images/web2/script1.png')
+      img(src='/images/web2/script1.png')
     section.slide
       h2 Script externo
       br
-      img(src='images/web2/script2.png')
+      img(src='/images/web2/script2.png')
     section.slide
       h2 Práctica guiada
       p Siguiento los pasos del instructor, cree un Hola Mundo haciendo uso de JS, de manera interna y externa.
@@ -290,21 +290,21 @@ block content
       h2 Práctica    
       p Siguiendo el ejemplo a continuación, cree una variable y asígnele el valor ingresado por el usuario.
       br
-      img(src='images/web2/script3.png')
+      img(src='/images/web2/script3.png')
     section.slide
       h2 Inicialización
       br
-      img(src='images/web2/script5.png')
+      img(src='/images/web2/script5.png')
       br
-      img(src='images/web2/script6.png')
+      img(src='/images/web2/script6.png')
     section.slide
       h2 Declaración
       br
-      img(src='images/web2/script4.png')    
+      img(src='/images/web2/script4.png')    
     section.slide
       h2 Asignación
       br
-      img(src='images/web2/script7.png')
+      img(src='/images/web2/script7.png')
     section.slide
       h2 Práctica
       p Haciendo uso de lo aprendido, cree un programa que haga lo siguiente: 
@@ -318,22 +318,22 @@ block content
       h2 if
       p Evalúa una condición y si se cumple, ejecuta el código contenido.
       br
-      img(src='images/web2/if.png')
+      img(src='/images/web2/if.png')
     section.slide
       h2 if else
       p Evalúa una condición y si se cumple, ejecuta el código contenido, y si no, ejecuta el segundo segmento de código.
       br
-      img(src='images/web2/ifelse.png')
+      img(src='/images/web2/ifelse.png')
     section.slide
       h2 while
       p Repite un blóque de código mientras que la condición sea verdad.
       br
-      img(src='images/web2/while.png')
+      img(src='/images/web2/while.png')
     section.slide
       h2 for
       p Repite un blóque de código según sus tres principales partes. Inicialización, condición y expresión.
       br
-      img(src='images/web2/for.png')
+      img(src='/images/web2/for.png')
     section.slide
       h2 Práctica guiada
       p Con ayuda del instructor, cree un programa que haga lo siguiente:
@@ -345,11 +345,11 @@ block content
       h2 function
       p Se entiende por funcion como una variable que almacena una lista de instrucciones.
       br
-      img(src='images/web2/function.png')
+      img(src='/images/web2/function.png')
     section.slide
       h2 Invocando a una función
       br
-      img(src='images/web2/function2.png')
+      img(src='/images/web2/function2.png')
     section.slide
       h2 Práctica
       p Haciendo uso de lo aprendido, cree un programa que sume, reste y multiplique dos números, previamente inicializados. Asegurese de alertar al usuario los tres resultados.
@@ -358,15 +358,15 @@ block content
       p Un arreglo es una lista de cualquier tipo de dato, incluyendo a otros arreglos.
       p Cada item en el arreglo tiene un indice que puede ser usado para leer o asignar dicho valor.
       br
-      img(src='images/web2/array.png')
+      img(src='/images/web2/array.png')
     section.slide
       h2 Lectura y escritura
       br
       h3 Lectura
-      img(src='images/web2/array2.png')
+      img(src='/images/web2/array2.png')
       br
       h3 Escritura
-      img(src='images/web2/array3.png')
+      img(src='/images/web2/array3.png')
     section.slide
       h2 Otras propiedades y métodos del arreglo
       ul
@@ -377,7 +377,7 @@ block content
       h2 Práctica
       p Analice el siguiente código y explique qué hace linea por linea, e indique cuantos nombres quedan en el arreglo.
       br
-      img(src='images/web2/code.png')
+      img(src='/images/web2/code.png')
   section(data-background='#D4E157')    
     h1 El DOM
   section
@@ -386,7 +386,7 @@ block content
       p Es un estándar del W3C, plataforma que permite a los scripts acceder y actualizar contenido, estructura y estilo del documento html.
     section.slide
       h2 DOM
-      img(src='images/web2/dom.gif')
+      img(src='/images/web2/dom.gif')
     section.slide
       h2 ¿Qué se puede hacer con JavaScript?
       ul
@@ -397,7 +397,7 @@ block content
         li JS puede crear nuevos eventos a los elementos
     section.slide
       h2 Manipulación del DOM
-      img(src='images/web2/dom2.png')
+      img(src='/images/web2/dom2.png')
       br
       a(href="http://www.w3schools.com/js/tryit.asp?filename=tryjs_dom_method") Ejemplo ...
     section.slide
@@ -466,30 +466,30 @@ block content
         li document.replaceChild()
     section.slide
       h2 Ejemplo, creando y agregando elementos
-      img(src='images/web2/dom3.png')
+      img(src='/images/web2/dom3.png')
       br
-      img(src='images/web2/dom4.png')
+      img(src='/images/web2/dom4.png')
     section.slide
       h2 Ejemplo, removiendo elementos
-      img(src='images/web2/dom5.png')
+      img(src='/images/web2/dom5.png')
       br
-      img(src='images/web2/dom6.png')
+      img(src='/images/web2/dom6.png')
       br
-      img(src='images/web2/dom7.png')
+      img(src='/images/web2/dom7.png')
       br
-      img(src='images/web2/dom8.png')
+      img(src='/images/web2/dom8.png')
   section
     section.slide
       h2 Events Handlers
     section.slide
       h2 Eventos en el HTML
-      img(src='images/web2/event1.png')
+      img(src='/images/web2/event1.png')
     section.slide
       h2 Eventos del html al JS
-      img(src='images/web2/event2.png')
+      img(src='/images/web2/event2.png')
     section.slide
       h2 Eventos en el JS
-      img(src='images/web2/event3.png')
+      img(src='/images/web2/event3.png')
     section.slide
       h2 Otros tipos de eventos
       p Existen muchso otros tipos de eventos, algunos son:
@@ -512,27 +512,27 @@ block content
       h2 form
       p El formulario se utiliza para recolectar los datos ingresados por el usuario.
       p A este elemento se le ingresan otros de tipo input.
-      img(src='images/web2/form.png')
+      img(src='/images/web2/form.png')
       br
       a(href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml_form_submit") Ejemplo...
     section.slide
       h2 El atributo Action
       br
-      img(src='images/web2/form2.png')
+      img(src='/images/web2/form2.png')
       br
       p Define la acción a ser realizada por el formulario. Generalmente indica la dirección a la que llegarán los datos.
     section.slide
       h2 El atributo Method
       br
-      img(src='images/web2/form3.png')
+      img(src='/images/web2/form3.png')
       br
-      img(src='images/web2/form4.png')
+      img(src='/images/web2/form4.png')
       br
       p Especifica el método HTTP a usarse al hacer el envío de datos (GET, POST).      
     section.slide
       h2 El atributo Name en los inputs
       p Para que los valores lleguen a su destino identificados es necesario agregar el atributo "name" a cada uno de sus campos.
-      img(src='images/web2/form5.png')
+      img(src='/images/web2/form5.png')
     section.slide
       h2 Práctica
       p Con la ayuda del istructor, programe un formulario con el campo nombre y un campo de mensaje.
@@ -542,16 +542,16 @@ block content
       h1 Elementos del form
     section.slide
       h2 Elemento select
-      img(src='images/web2/select.png')
+      img(src='/images/web2/select.png')
       br
-      img(src='images/web2/select2.png')
+      img(src='/images/web2/select2.png')
       br
       a(href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml_elem_select") Ejemplo...
     section.slide
       h2 Elemento textarea
-      img(src='images/web2/area.png')
+      img(src='/images/web2/area.png')
       br
-      img(src='images/web2/area2.png')
+      img(src='/images/web2/area2.png')
       br
       a(href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml_elem_textarea") Ejemplo...
     section.slide
@@ -592,11 +592,11 @@ block content
     section.slide
       h2 El doctype
       p El doctype es muy simple ahora.
-      img(src='images/web2/html52.png')
+      img(src='/images/web2/html52.png')
     section.slide
       h2 El charset
       p El charset es muy simple también.
-      img(src='images/web2/html53.png')
+      img(src='/images/web2/html53.png')
     section.slide
       h2 Nuevos tipos de elementos
       ul
@@ -615,17 +615,15 @@ block content
         li SSE
     section.slide
       h2 Nuevo layout
-      img(src='images/web2/layout.png')
+      img(src='/images/web2/layout.png')
     section.slide
       h2 Práctica
       p Tomando en cuenta el nuevo layout de HTML5, reprodusca el ejemplo anterior en una página usando HTML5 y CSS3.
       p Para crear el degradado, tome en cuenta el siguiente ejemplo.
-      img(src='images/web2/css3.png')
+      img(src='/images/web2/css3.png')
     section.slide
       h2 Nuevos tipos de input
       ul
-        li color
-        li date
         li color
         li date
         li datetime
@@ -664,7 +662,7 @@ block content
     section.slide
       h2 Elementos personalizados
       p Ahora es posible crear un elemento HTML5 totalmente personalizado.
-      img(src='images/web2/custom.png')
+      img(src='/images/web2/custom.png')
       br
       a(href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml5_browsers_myhero") Ejemplo ...
     section.slide
@@ -674,71 +672,1092 @@ block content
     section.slide
       h2 Soporte
       p Cuando un elemento no es soportado por el browser, es posible incluir el HTML opcional dentro de sus etiquetas.
-      img(src='images/web2/support.png')
+      img(src='/images/web2/support.png')
     section.slide
       h2 Internet Explorer if
       p Es posible usar códigos especiales en HTML5 para los clientes con navegadores viejos.
-      img(src='images/web2/ie.png')
+      img(src='/images/web2/ie.png')
     section.slide
       h2 Links de utilidad
       a(href="http://modernizr.com/") Modernizr
       br
       a(href="http://html5test.com/") HTML5 test
-
-
+  section
+    section.slide
+      h1 Multimedia
+    section.slide
+      h2 Soporte
+      img(src='/images/web2/multimedia.png')
+    section.slide
+      h2 Audio tag
+      audio(controls)
+        source(src='https://simpl.info/audio/audio/animalSounds.ogv', type='audio/ogg')
+        source(src='https://simpl.info/audio/audio/animalSounds.mp3', type='audio/mp3')
+    section.slide
+      h2 Video tag
+      video(controls)
+        source(src='https://simpl.info/video/video/chrome.webm', type='video/webm')
+        source(src='https://simpl.info/video/video/chrome.mp4', type='video/mp4')
+    section.slide
+      h2 Práctica
+      p cree una página con los dos elementos de multimedia de html5.
+      img(src='/images/web2/multimedia1.png')
+      br
+      img(src='/images/web2/multimedia2.png')
+      br
+      p Puede usar los siguientes recursos.
+      ul
+        li http://www.w3schools.com/html/horse.ogg
+        li http://www.w3schools.com/html/horse.mp3
+        li http://www.w3schools.com/html/movie.webm
+        li http://www.w3schools.com/html/movie.mp4
+  section
+    section.slide
+      h1 ¿Qué hay de nuevo en CSS3?    
+    section.slide
+      h2 border-radius
+      img(src='/images/web2/border.png')
+      br
+      p Permite indicar que un elemento tendrá forma redondeada.
+      p También se pueden crear círculos.
+      img(src='/images/web2/border2.png')
+    section.slide
+      h2 Práctica
+      p Usando la propiedad border-radius, cree un div con un borde redondeado de 5px y dentro cree tres circulos de diferente color.
+    section.slide
+      h2 box-shadow
+      p Permite agregar profundidad a los elementos.
+      br
+      img(src='/images/web2/shadow.png')
+      br
+      p Las propiedades son:
+      ul
+        li x-offset
+        li y-offset
+        li nivel del blur (borroso)
+        li color de la sombra
+    section.slide
+      h2 Práctica
+      p Al div de la práctica anterior creele el efecto de profundidad.
+    section.slide
+      h2 text-shadow
+      p Al igual que el box-shadow, permite aplicar el efecto, pero al texto.
+      br
+      img(src='/images/web2/shadow2.png')
+      br
+      ul
+        li x-offset
+        li y-offset
+        li nivel del blur (borroso)
+        li color de la sombra
+    section.slide
+      h2 Text-Stroke
+      p *Solo soportado hoy en día por safari, chrome y iPhone. Muestra un borde alrededor del texto para evitar que se confunda con el fondo.
+      img(src='/images/web2/stroke.png')
+    section.slide
+      h2 Multiples fondos
+      img(src='/images/web2/back.png')
+    section.slide
+      h2 background-size      
+      img(src='/images/web2/bgsize.png')
+      br
+      p A pesar de ser muy común, aun es necesario prevenir en caso de otros browsers que no sean tipo webkit.
+      img(src='/images/web2/bgsize2.png')
+    section.slide
+      h2 Práctica
+      p Haciendo uso de lo aprendido, cree una página con un título (h1) que tenga un text-stroke y un subtítulo (h2) con text-shadow.
+      p Adicionalmente haga que el body tenga dos imágenes de fondo.
+      p Cree también un div cuadrádo de 300px, que tenga un fondo que solo cubra una cuarta parte de su tamaño.
+    section.slide
+      h2 text-overflow
+      p Permite que el texto cortado, indique con "..." que existe más texto.
+      img(src='/images/web2/over.png')
+    section.slide
+      h2 Práctica
+      p Cree un div con texto aleatorio, que en el evento hover, cambie la propiedad white-space a normal.
+    section.slide
+      h2 Modelo Box flexible
+      p Facilita la manera en la que se acomodan los objetos en el markup.
+      img(src='/images/web2/box.png')
+      br
+      img(src='/images/web2/box2.png')
+      br
+      img(src='/images/web2/box3.png')
+    section.slide
+      h2 Práctica
+      p Junto con el instructor, analice las posibilidades de utilizar la propiedad box junto con box-flex para el aprovechamiento del espacio.
+      img(src='/images/web2/box4.png')
+    section.slide
+      h2 Transition
+      p Permite animar de maera simple pero efectiva cualquier elemento del DOM.
+      img(src='/images/web2/transition.png')
+      br
+      p Los parámetros pueden ser:
+      ul
+        li La propiedad
+        li Duración
+        li Función de tiempo
+        li Retardo
+    section.slide
+      h2 Práctica
+      p Cree una página en donde tenga una lista de links (a) y logre que si coloca el mouse sobre ellos, se muevan a la derecha, haciendo una animación.
+      p Adicionalmente cree una caja (div) que al hacerle click cambie de tamaño, de grande a pequeña, haciendo una animación.        
+  section(data-background='#DEB887')
+    section
+      h1 Evaluación
+      a(href='http://cdn.tutsplus.com/net/uploads/legacy/855_cssProperties/flipper.html') Demo  
+    section.slide
+      h2 Cree el siguiente markup
+      img(src='/images/web2/evaluation2-1.png')
+    section.slide
+      h2 Centrar horizontal y verticalmente
+      img(src='/images/web2/evaluation2-2.png')
+      br
+      img(src='/images/web2/evaluation2-3.png')
+    section.slide
+      h2 Aplique los estilos
+      img(src='/images/web2/evaluation2-4.png')
+      br
+      img(src='/images/web2/evaluation2-5.png')
+    section.slide
+      h2 Sombreado
+      img(src='/images/web2/evaluation2-6.png')
+      br
+      img(src='/images/web2/evaluation2-7.png')
+    section.slide
+      h2 Estilo a los divs
+      img(src='/images/web2/evaluation2-8.png')
+      br
+      img(src='/images/web2/evaluation2-9.png')
+    section.slide
+      h2 Arreglando el frente
+      img(src='/images/web2/evaluation2-10.png')
+      br
+      img(src='/images/web2/evaluation2-11.png')
+    section.slide
+      h2 Animando la rotación
+      img(src='/images/web2/evaluation2-12.png')
+      br
+      img(src='/images/web2/evaluation2-13.png')
+    section.slide
+      h2 El toque final
+      img(src='/images/web2/evaluation2-14.png')
+      br
+      img(src='/images/web2/evaluation2-15.png')
   section(data-background='#80CBC4')
     h1 JavaScript OOP
+  section
+    section.slide
+      h2 Tipos de OOP en JS
+      p Existen varias maneras de programar orientado a objetos en JS, y cada una se acomoda a sus necesidades, según sus diferentes caracterísiticas.
+    section.slide
+      h2 Usando "new Object()"
+      img(src='/images/web2/oop.png')
+    section.slide
+      h2 Notación literal u Objetos literales
+      img(src='/images/web2/oop2.png')
+    section.slide
+      h2 Constructor
+      img(src='/images/web2/oop3.png')
+    section.slide
+      h2 Usando "prototipe"
+      img(src='/images/web2/oop4.png')
+    section.slide
+      h2 Usando "prototipe" para mejorar objetos existentes
+      img(src='/images/web2/oop5.png')
+    section.slide
+      h2 Subclases y superclases
+      img(src='/images/web2/oop6.png')
+    section.slide
+      h2 Práctica
+      p Siguiendo al instructor, programe una pantalla con tres figuras geométricas, un circulo, un cuadrado y un rectángulo. Cada uno con diferentes características visuales, propiedades y evento click. Sin embargo deben compartir el evento doble click.
+  section(data-background='#7986AC')
+    h1 Introducción a JQuery
+  section
+    section.slide
+      h2 ¿Qué es JQuery?
+      p Es una librería de JS, rápida, pequeña y llena de funcionalidades, que facilita la programación en JS a con el DOM.
+      img(src='/images/web2/jquery.png')
+    section.slide
+      h2 Eventos
+      img(src='/images/web2/jquery2.png')
+      br
+      p Permite asignar los eventos a los objetos de tipo jquery de manera facil e inmediata.
+    section.slide
+      h2 JQuery Ajax
+      p Una de las funciones más importantes de JQuery, que permite comunicarse con servicios externos de manera facil y rápida.
+      img(src='/images/web2/jquery3.png')
+    section.slide
+      h2 Documentación
+      a(href='http://api.jquery.com/') JQuery.com
+    section.slide
+      h2 Otras librerías de JQuery
+      ul
+        li
+          a(href='http://jquerymobile.com/') JQuery Mobile
+        li
+          a(href='http://jqueryui.com/') JQuery UI
+    section.slide
+      h2 Práctica
+      p Haciendo uso de la documentación de JQuery y con la ayuda del instructor, programe nuevamente una pantalla con tres botones y un div. El primer botón agregará al div una imagen, el segundo un párrafo y el tercero limpiará el div de controles.
+    section.slide
+      h2 Práctica
+      h Haciendo uso de Ajax, cree un formulario que le permita agregar productos, utilizando el ejemplo de formulario usado anteriormente.
+  section
+    section.slide
+      h1 AJAX
+    section.slide
+      h2 ¿Qué es AJAX?
+      ul
+        li Asynchronous JavaScript and XML
+        li Es el uso del objeto XMLHttpRequest para comunicarse con el servidor
+        li Envía y recibe información de varios formatos
+        li JSON, XML, HTML, texto, etc.
+        li Es asincrónico
+        li Hace requests al servidor sin recargar la página
+        li Recibe y manipula datos del servidor
+    section.slide
+      h2 ¿Cómo hacer un HTTP request?
+      h3 Primero se crea el objeto http
+      img(src='/images/web2/ajax.png')
+    section.slide
+      h3 Se indica qué pasa cuando se recibe de regreso la respuesta del servidor
+      img(src='/images/web2/ajax2.png')
+    section.slide
+      h3 Finalmente se llama a los métodos .open() y .send()
+      img(src='/images/web2/ajax3.png')
+    section.slide
+      h3 Si se desea enviar parámetros
+      img(src='/images/web2/ajax4.png')
+      br
+      img(src='/images/web2/ajax5.png')
+    section.slide
+      h2 ¿Cómo manejar la respuesta del servidor?
+      p La función onreadystatechange recibe un parámetro estado. Si este tiene el valor 4, significa que la respuesta se recibió exitosamente.
+      img(src='/images/web2/ajax6.png')
+      br
+      p Los otros estados son:
+      ul
+        li 0: Sin inicializar
+        li 1: Cargando
+        li 2: Cargado
+        li 3: En contacto
+        li 4: Completo
+    section.slide
+      h2 Códigos de respuesta
+      p Existen muchos códigos de respuesta, los cuales se pueden ver en la página del 
+        a(href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html") W3C
+      img(src='/images/web2/ajax7.png')
+    section.slide
+      h3 ¿Cómo tomar los datos?
+      p Existen dos opciones para tomar los datos
+      ul
+        li httpRequest.responseText: Contiene un string con la respuesta del servidor
+        li httpRequest.responseXML: Contiene la respuesta en formato XML
+    section.slide
+      h2 Ejemplo (1 de 2)
+      img(src='/images/web2/ajax8.png')
+    section.slide
+      h2 Ejemplo (2 de 2)
+      img(src='/images/web2/ajax9.png')
+    section.slide
+      h2 Práctica
+      p Haciendo uso de lo aprendido, cree una página en donde pueda agregar un producto en el servicio web ya existente.
+      p Puede necesitar xhr.setRequestHeader('Content-Type', 'application/json'); para enviar JSON al server y JSON.parse() para la rspuesta del mismo tipo.
+    section.slide
+      h2 Comparación con JQuery
+      a(href='http://api.jquery.com/jquery.ajax/') Documentación oficial
+      br
+      img(src='/images/web2/ajax10.png')
+    section.slide
+      h2 Práctica
+      p Cree la misma página de la práctica anterior, pero usando JQuery.
+  section(data-background='#FF3300')
+    h1 Validación de formularios
+  section
+    section.slide
+      h2 Validación con HTML5
+      p Para iniciar a validar con HTML5 lo único que se requiere es el atributo "required".
+      img(src='/images/web2/val1.png')
+      br
+      form
+        input(type='text' required)
+        br
+        br
+        input(type='submit' value='Guardar')
+    section.slide
+      h2 Por medio de diferentes tipos
+      p Al convinar "required" con "type='email'" se logra que se valide como correo automáticamente.
+      img(src='/images/web2/val2.png')
+      br
+      form
+        input(type='email' required)
+        br
+        br
+        input(type='submit' value='Guardar')
+    section.slide
+      h2 Otros ejemplos
+      form
+        span type="url" 
+        input(type="url" required)
+        br
+        span type="number" 
+        input(type="number" required)
+        br
+        br
+        span type="range" 
+        input(type="range" required)
+        br
+        br
+        input(type='submit' value='Guardar')
+    section.slide
+      h2 Práctica
+      p Cree un formulario que valide un nombre, email, url, edad y un rango.
+    section.slide
+      h2 Cambiando el estilo
+      p Es posible cambiar el estilo de la validación usando CSS.
+      img(src='/images/web2/val3.png')
+      br
+      img(src='/images/web2/val4.png')
+    section.slide
+      h2 Información adicional
+      p Es posible usar el atributo "title" para mostrar más información.
+      img(src='/images/web2/val5.png')
+    section.slide
+      h2 Mensajes personalizados
+      p Es posible personalizar el mensaje en la validación, pero es necesario ser precavido con el cross-browser.
+      img(src='/images/web2/val6.png')
+    section.slide
+      h2 Mensajes personalizados con JS
+      img(src='/images/web2/val7.png')
+    section.slide
+      h2 Práctica
+      p Cree un formulario con 4 campos y validelos usando las siguientes técnicas:
+      ul
+        li Al primer campo validelo y agregue el atributo "title"
+        li Al segundo validelo con la propiedad "x-moz-errormessage", asegúrese de usar Firefox
+        li A los dos otros campos cambieles la validación usando JS. Si el campo está vacío, debe decir "Campo vacio" pero si está incorrecto "Campo incorrecto"
+        li Cambie el estilo de la validación a un borde color verde, cuando es válido y morado cuando no lo es
+    section.slide
+      h2 Práctica
+      p Haciendo uso del JQuery y del plugin .validate(√) cree un formulario con ayuda del instructor y siga sus instrucciones.
+      a(href='http://jqueryvalidation.org/') jqueryvalidation.org
+  section(data-background='#97D38D')
+    h1 Geolocalización
+    a(href="http://html5demos.com/geo") Demo
+  section
+    section.slide
+      h2 HTML5 Geolocation
+      ul
+        li API usado para obtener la posición geográfica del usuario
+        li Es mucho más eficiente en dispositivos con GPS
+        li Devido a que compromete información personal, el usuario debe aceptar al usarse
+      img(src='/images/web2/geo1.png')
+    section.slide
+      h2 Error
+      p En caso de un error es importante saber capturarlo
+      img(src='/images/web2/geo2.png')
+    section.slide
+      h2 Práctica
+      p Haciendo uso de los ejemplos anteriores, cree una página con un botón que pida al usuario compartir sus coordenadas y muestrelas en dos span. En caso de error, muestre un span con un mensaje según el tipo de error.
+    section.slide
+      h2 Mostrando el mapa
+      p Es posible utilizar APIs externos para mostrar la posición actual de una manera más visual.
+      img(src='/images/web2/geo3.png')
+    section.slide
+      h2 Práctica
+      p En la práctica anterior, muestre también una imagen con el mapa, utilizando el API de google
+    section.slide
+      h2 Otros datos interesantes
+      p El método getCurrentPosition() retorna algunos otros datos que son de mucha utilidad.
+      ul
+        li coords.latitude: Muestra la latitud
+        li coords.longitude: Muestra la longitude
+        li coords.accuracy: La precisión de la posición
+        li coords.altitude: Muestra la altitud
+        li coords.altitudeAccuracy: La precisión de la altitud
+        li coords.heading: La dirección en en grados, según la aguja del reloj
+        li coords.speed: Velocidad en metros por segundo
+        li timestamp: El objeto timestamp al momento de recibir los datos
+    section.slide
+      h2 watchPosition() y clearWatch()
+      p También es posible mantener actualizada la información del usuario en el mapa utilizando el método watchPosition y el método clearWatch para detener el proceso.
+      img(src='/images/web2/geo4.png')
+  section(data-background='#97D38D')
+    section
+      h1 Evaluación GPS
+    section.slide
+      p Cree una aplicación web-mobile que muestre en tiempo real la ubicación del usuario
+      img(src='/images/web2/geo5.png')
+  section(data-background='#964B8A')  
+    h1 Drag n Drop
+  section
+    section.slide
+      h2 Drag and drop en HTML5
+      ul
+        li Es ahora parte del estándar de HTML5
+        li Cualquier elemento puede ser arrastrado
+      br
+      img(src='/images/web2/drag1.png')
+    section.slide
+      h2 Ejemplo
+      img(src='/images/web2/drag2.png')
+    section.slide
+      h2 Práctica
+      p Cree una página con dos divs, en donde el primero contiene tres imágenes. Debe ser posible arrastrar las imágenes de un div al otro y biseversa.
+      p Adicionalmente cree un botón de limpiar que regrese las imágenes a su div original.
+    section.slide
+      h2 Usando JQuery UI
+      p Analice con el instructor el uso y ejemplos de las funcionalidades de la librería JQuery UI
+      a(href="http://jqueryui.com/") JQuery UI
+  section(data-background='#964B8A')  
+    h1 App Cache
+  section
+    section.slide
+      h2 ¿Qué es App cache?
+      p Permite que una página sea accesible aun sin conexión a internet.
+    section.slide
+      h2 Ejemplo
+      p Abra este link en un nuevo tab, detenga su conexión a internet y luego refresque la ventana.
+      a(href="http://www.w3schools.com/html/tryhtml5_html_manifest.htm") Ejemplo
+    section.slide
+      h2 Manifiesto o manifest en el HTML
+      img(src='/images/web2/cache1.png')
+    section.slide
+      h2 Manifiesto o manifest en el Server
+      p Junto con el archivo .html debe servirse un archivo con la siguiente configuración
+      img(src='/images/web2/cache2.png')
+    section.slide
+      h2 Práctica
+      p Siga con atención la demostración del instructor.
+  section(data-background='#80FF80')
+    h1 Responsive design (Diseño líquido)
+  section
+    section.slide
+      h2 Responsive design
+      p La internet a cambiado, y hoy en día es importante diseñar teniendo en cuenta a los diferentes dispositivos móviles.
+      img(src='/images/web2/responsive.png')
+    section.slide
+      h2 Ejemplo
+      img(src='/images/web2/responsive2.jpg')
+      br
+      a(href='http://colly.com') colly.com
+      br
+      a(href='http://sweethatclub.org') sweethatclub.org
+      br
+      a(href='http://www.cacaotour.com') www.cacaotour.com
+    section.slide
+      h2 El viewport
+      p Para optimizar la resolución para una variedad de dispositivos, es necesario incluir el meta-tag viewport.
+      ul
+        li Controla el ancho (width) y la escala del browser
+        li Se puede ingresar "width=device-width" para coinsidir el ancho de la pantalla con el ancho en pixeles
+        li Con "initial-scale=1" se establece una relación de 1:1 entre los pixeles del CSS y del dispositivo
+        li Se debe asegurar que no se evite al usuario cambiar la escala, para que siga siendo accesible
+      br
+      img(src='/images/web2/responsive3.png')
+    section.slide
+      h2 Ejemplo del viewport
+      br
+      a(href='http://googlesamples.github.io/web-fundamentals/samples/layouts/rwd-fundamentals/vp-no.html') Sin viewport
+      br
+      a(href='http://googlesamples.github.io/web-fundamentals/samples/layouts/rwd-fundamentals/vp.html') Con viewport
+      br
+      p En este ejemplo cada cuadro tiene 50px de ancho.
+    section.slide
+      h2 Otros atributos
+      ul
+        li minimum-scale
+        li maximum-scale
+        li user-scalable
+    section.slide
+      h2 Ajustar el tamaño al viewport
+      p El usuario está acostumbrado a hacer scroll vertical, por lo que obligarlo a hacerlo horizontal o a hacer zoom out genera una mala experiencia.
+      h3 Recomendaciones
+      ul
+        li No cree grandes elementos con ancho fijo
+        li El contenido no debe depender de un tamaño para verse bien
+        li Haga uso de CSS para hacer diferentes estilos en diferentes tamaños
+    section.slide
+      h2 Ejemplo de ancho fijo (fixed width) vs %
+      img(src='/images/web2/responsive4.png')
+      br
+      img(src='/images/web2/responsive5.png')
+      img(src='/images/web2/responsive6.png')
+      br
+      a(href='http://www.w3schools.com/cssref/tryit.asp?filename=trycss_dim_width_percent') Ejemplo
+    section.slide
+      h2 Media Queries
+      p Filtros que se aplican al css para cambiar los estilos según diferentes características.
+      ul
+        li Tipo de pantalla
+        li Ancho
+        li Alto
+        li Orientación
+        li Resolución
+      br
+      img(src='/images/web2/media1.png')
+    section.slide
+      h2 Opciones
+      h3 Indicando "media" en el link
+      img(src='/images/web2/media2.png')
+      h3 Directamente en el css
+      img(src='/images/web2/media3.png')
+    section.slide
+      h2 Según el tamaño del viewport
+      img(src='/images/web2/media4.png')
+      ul
+        li min-width: Aplicado cuando el ancho del browser es mayor al especificado
+        li max-width: Aplicado cuando el ancho del browser es menor al especificado
+        li min-height: Aplicado cuando el alto del browser es mayor al especificado
+        li max-height: Aplicado cuando el alto del browser es menor al especificado
+        li orientation=portrait: Aplicado cuando el ancho del browser es menor al alto
+        li orientation=landscape: Aplicado cuando el ancho del browser es mayor al alto
+      br
+      a(href="http://googlesamples.github.io/web-fundamentals/samples/layouts/rwd-fundamentals/media-queries.html") Ejemplo...
+    section.slide
+      h2 Práctica
+      p Usando media queries, cree una página que al ser mayor a 700px cambie el color de fondo del body. Además cree un div con borde sólido negro de 2px de ancho, en done se contendrá una gran cantidad de texto. En la versión pequeña haga el texto grande y en la versión grande, hágalo pequeño. Siempre mantenga un aproximado de 80 palabras por linea.
+      p Para el tamaño del texto use las propiedades "font-size: small" y "font-size: medium".
+    section.slide
+      h2 ¿Cómo escojer los breakpoints?
+      ul
+        li Seleccione los breakpoints basandose en el contenido, no en el dispositivo
+        li Diseñe la versión pequeña primero (mobile first)
+        li Mantenga las lineas de texto de un máximo aproximado de 80 caracteres
+  section(data-background='#B05883')
+    h1 Patrones de diseño líquido
+  section
+    section.slide
+      h2 Diseño fluido
+      img(src='/images/web2/media5.png')
+    section.slide
+      h2 Ejemplo (1 de 2)
+      img(src='/images/web2/media6.png')      
+      img(src='/images/web2/media7.png')
+    section.slide
+      h2 Ejemplo (2 de 2)
+      img(src='/images/web2/media8.png')      
+      img(src='/images/web2/media9.png')
+    section.slide
+      h2 Práctica
+      p Haciendo uso del ejemplo anterior, programe 5 cajas en dos filas, que tengan un cambio fluido de posición.
+    section.slide
+      h2 Layout multi-columnas
+      img(src='/images/web2/media10.png')
+    section.slide
+      h2 Ejemplo (1 de 2)
+      img(src='/images/web2/media11.png')
+      img(src='/images/web2/media12.png')
+    section.slide
+      h2 Ejemplo (2 de 2)
+      img(src='/images/web2/media13.png')
+    section.slide
+      h2 Práctica
+      p Haciendo uso del ejemplo anterior, cree una página con el patrón multi-columnas.
+    section.slide
+      h2 Cambio de layout
+      img(src='/images/web2/media14.png')
+    section.slide
+      h2 Ejemplo (1 de 2)
+      img(src='/images/web2/media15.png')
+      img(src='/images/web2/media16.png')
+    section.slide
+      h2 Ejemplo (2 de 2)
+      img(src='/images/web2/media17.png')
+    section.slide
+      h2 Práctica
+      p Haciendo uso del ejemplo anterior, cree una página con el patrón de cambio de layout.
+  section(data-background='#90927d')
+    h1 Twitter Bootstrap
+  section.slide
+    h2 Introducción
+    p Escuche atentamente a la explicación que dará el instructor
+  section(data-background='#D4A76A')
+    h1 SVG
+  section
+    section.slide
+      h2 Scalable Vector Graphics
+      ul
+        li Es un lenguaje markup tipo XML usado para describir gráficos vectoriales en dos dimensiones
+        li Similar a Adobe Flash
+        li Funciona con los estándares de la W3C, CSS, DOM, SMIL
+    section.slide
+      h2 ¿Porqué usar SVG?
+      ul
+        li Tamaños pequeños y comprimibles
+        li Escala a cualquier tamaño sin perder calidad
+        li Se ve muy bien en "retina displays"
+        li Control de diseño
+        li Interactivo
+    section.slide
+      h2 ¿Porqué usar SVG?
+      ul
+        li Editable
+        li Velocidad de carga muy rápida
+        li Funciona con Search Engines
+        li Compatibilidad hacia atras
+        li Recomendado por la W3C
+    section.slide
+      h2 Cuando usar SVG en un website
+      img(src='/images/web2/svg.png')
+    section.slide
+      h2 Compatibilidad
+      p Todos los browsers modernos lo soportan.
+      p Los únicos browser con pobre soporte son Internet Expplorer 8 o inferiores y Android Web Browser 2.3 e inferiores.
+    section.slide
+      h2 Ejemplo
+      img(src='/images/web2/svg1.png')
+      br
+      svg(width='100', height='100')
+        circle(cx='50', cy='50', r='40', stroke='green', stroke-width='4', fill='yellow')
+        | Sorry, your browser does not support inline SVG.
+    section.slide
+      h2 ejemplos
+      a(href="http://www.svgopen.org/2007/papers/SLOGO_Abstract/SLogo_Fig9_Goldberg_Machine.svg") Goldberg Machine
+      br
+      a(href="http://svg-wow.org/camera/camera.xhtml") Logo
+      br
+      a(href="http://upload.wikimedia.org/wikipedia/commons/6/6c/Trajans-Column-lower-animated.svg") Interacción
+      br
+      a(href="http://codinginparadise.org/projects/svgweb/samples/demo.html?name=radial1&svg.render.forceflash=false") Varios
+    section.slide
+      h2 ¿Cómo crearlos?
+      img(src='/images/web2/svg3.png')
+    section.slide
+      h2 Ejemplo
+      <iframe width="560" height="315" src="//www.youtube.com/embed/O6kNFjOHqGc" frameborder="0" allowfullscreen></iframe>
+    section.slide
+      h2 SVG en HTML
+      h3 Metodos que permiten control
+      img(src='/images/web2/svg4.png')
+    section.slide
+      h2 SVG en HTML
+      h3 Metodos que NO permiten control
+      img(src='/images/web2/svg5.png')
+    section.slide
+      h2 Formas principales
+      ul
+        li Rectangle <rect>
+        li Circle <circle>
+        li Ellipse <ellipse>
+        li Line <line>
+        li Polyline <polyline>
+        li Polygon <polygon>
+        li Path <path>
+    section.slide
+      h2 Rectángulo
+      img(src='/images/web2/svg2.png')
+      br
+      svg(width='400', height='110')
+        rect(width='300', height='100', style='fill:rgb(0,0,255);stroke-width:3;stroke:rgb(0,0,0)')
+    section.slide
+      h2 Otras formas
+      p La siguiente es una lista de algunas de las formas existentes.
+      a(href="https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model#SVG_interfaces") Ejemplos...
+    section.slide
+      h2 Práctica
+      p Cree una página con 4 SVG (in line), un circulo, un rectángulo, una estrella y un elipsis.
+    section.slide
+      h2 Animación
+      h3 Elemento animate
+      img(src='/images/web2/svg6.png')
+      br
+      ul
+        li attributeName: El nombre del atributo a animar
+        li from: opcional, indica el punto de partida
+        li to: indica la dirección de la animación
+        li dur: indica la duración de la animación
+    section.slide
+      h2 Ejemplo 1
+      h3 Usando el atributo "repeatCount='indefinite'" en el código anterior
+      svg
+        rect(width='200', height='200', fill='slategrey')
+          animate(attributeName='height', from='0', to='200', dur='3s', repeatCount='indefinite')
+      br
+      br
+      br
+    section.slide
+      h2 Ejemplo 2
+      img(src='/images/web2/svg7.png')
+      br
+      svg
+        circle(r='100', cx='100', cy='100', fill='slategrey')
+          animate(attributeName='r', from='0', to='100', dur='3s', repeatCount='indefinite')
+      br
+      br
+      br
+    section.slide
+      h2 Movimiento
+      ul
+        li fill: indica qué pasa al ternimar la animación
+      br
+      h3 Cuadrado
+      img(src='/images/web2/svg8.png')
+      br
+      h3 Círculo
+      img(src='/images/web2/svg9.png')
+    section.slide
+      h2 Práctica
+      p Haciendo uso del siguiente ejemplo anime múltiples atributos de un círculo
+      img(src='/images/web2/svg10.png')
+    section.slide
+      h2 Siguiendo un camino
+      p También es posible hacer que direfentes partes de un gráfico interactuen entre si
+      img(src='/images/web2/svg11.png')
+      br
+      textarea <svg>
+        <defs>
+        <path id="thepath" fill="none" stroke="#000000" d="M0.905,0.643c0,0,51.428,73.809,79.047,166.19s68.095,38.572,107.144-18.095
+        c39.047-56.667,72.381-92.382,113.333-42.381S335.5,178.5,374,200.5s82-18.5,97.5-33.5"/>
+        </defs>
+        <circle r="15" cx="15" cy="15" fill="slategrey">
+        <animateMotion dur="3s">
+        <mpath xlink:href="#thepath"/>
+        </animateMotion>
+        </svg>
+    section.slide
+      h2 Práctica
+      p Recree el ejemplo anterior
+    section.slide
+      h2 Transformations
+      p También es posible utilizar diferentes transformaciones como "scale", "translate" y "rotate" y para lograrlo se usa "animateTransform"
+      img(src='/images/web2/svg12.png')
+    section.slide
+      h2 Práctica
+      p Haciendo uso de lo aprendido, utilize scale, translate y rotate para animar tres objetos diferentes.
+      p Usar transform="translate(30,40)" y transform="rotate(45)" respectivamente
+  section(data-background='#6897bb')
+    h1 Canvas
+  section
+    section.slide
+      h2 Canvas
+      p Se utiliza para dibujar gráficos por medio de JS
+      img(src='/images/web2/canvas.png')      
+    section.slide
+      h2 Práctica
+      p Cree un canvas y aplique el siguiente script
+      img(src='/images/web2/canvas1.png')
+    section.slide
+      h2 Ejemplo
+      img(src='/images/web2/canvas2.png')
+      br
+      img(src='/images/web2/canvas3.png')
+  section
+    section.slide
+      h1 Dibujando con Canvas
+    section.slide
+      h2 El grid
+      img(src='/images/web2/canvas4.png')
+    section.slide
+      h2 Dibujando rectángulos
+      ul
+        li fillRect(x, y, width, height): Dibuja un rectángulo completo
+        li strokeRect(x, y, width, height): Dibuja un rectángulo vacío
+        li clearRect(x, y, width, height): Borra un rectángulo
+    section.slide
+      h2 Práctica
+      p haciendo uso de lo aprendido cree un cuadro en la posición 25, 25, de 100px de ancho y alto. luego borre un cuadrado en la posición 45, 45 de 60px de ancho y alto. Finalmente dibuje una linea cuadrada en la posición 50, 50 de 50px de ancho y alto.
+      img(src='/images/web2/canvas5.png')
+    section.slide
+      h2 Dibujando formas
+      ul
+        li beginPath(): Inicia el proceso de dibujo
+        li closePath(): Cierra el proceso de dibujo
+        li stroke(): Dibuja el borde de la figura
+        li fill(): llena el contenido de la figura
+    section.slide
+      h2 Ejemplo
+      p El siguiente ejemplo dibuja un triángulo
+      img(src='/images/web2/canvas6.png')
+    section.slide
+      h2 moveTo(x, y)
+      p Con moveTo(x, y), se puede cambiar la posición del puntero sin dejar marca
+    section.slide
+      h2 Práctica
+      p Recree el siguiente canvas
+      img(src='/images/web2/canvas7.png')
+    section.slide
+      h2 Ejemplo
+      textarea
+        | //- function draw() {
+        | //-   var canvas = document.getElementById('canvas');
+        | //-   if (canvas.getContext){
+        | //-     var ctx = canvas.getContext('2d');
 
+        | //-     roundedRect(ctx,12,12,150,150,15);
+        | //-     roundedRect(ctx,19,19,150,150,9);
+        | //-     roundedRect(ctx,53,53,49,33,10);
+        | //-     roundedRect(ctx,53,119,49,16,6);
+        | //-     roundedRect(ctx,135,53,49,33,10);
+        | //-     roundedRect(ctx,135,119,25,49,10);
 
+        | //-     ctx.beginPath();
+        | //-     ctx.arc(37,37,13,Math.PI/7,-Math.PI/7,false);
+        | //-     ctx.lineTo(31,37);
+        | //-     ctx.fill();
 
-  //- section(data-background='rgba(0, 100, 100, 0.2)')
-  //-   section
-  //-     h2 Background applied to stack
-  //-   section
-  //-     h2 Background applied to stack
-  //-   section(data-background='rgba(100, 0, 0, 0.2)')
-  //-     h2 Background applied to slide inside of stack
-  //- section(data-background-transition='slide', data-background='assets/image1.png', style='background: rgba(255,255,255,0.9);')
-  //-   h2 Background image
-  //- section
-  //-   section(data-background-transition='slide', data-background='assets/image1.png', style='background: rgba(255,255,255,0.9);')
-  //-     h2 Background image
-  //-   section(data-background-transition='slide', data-background='assets/image1.png', style='background: rgba(255,255,255,0.9);')
-  //-     h2 Background image
-  //- section(data-background='assets/image2.png', data-background-size='100px', data-background-repeat='repeat', data-background-color='#111', style='background: rgba(255,255,255,0.9);')
-  //-   h2 Background image
-  //-   pre.
-  //-     \ndata-background-size="100px" data-background-repeat="repeat" data-background-color="#111"            
-  //- section(data-background='#888888')
-  //-   h2 Same background twice (1/2)
-  //- section(data-background='#888888')
-  //-   h2 Same background twice (2/2)
-  //- section
-  //-   section(data-background='#417203')
-  //-     h2 Same background twice vertical (1/2)
-  //-   section(data-background='#417203')
-  //-     h2 Same background twice vertical (2/2)
-  //- section(data-background='#934f4d')
-  //-   h2 Same background from horizontal to vertical (1/3)
-  //- section
-  //-   section(data-background='#934f4d')
-  //-     h2 Same background from horizontal to vertical (2/3)
-  //-   section(data-background='#934f4d')
-  //-     h2 Same background from horizontal to vertical (3/3)
+        | //-     for(var i=0;i<8;i++){
+        | //-       ctx.fillRect(51+i*16,35,4,4);
+        | //-     }
+
+        | //-     for(i=0;i<6;i++){
+        | //-       ctx.fillRect(115,51+i*16,4,4);
+        | //-     }
+
+        | //-     for(i=0;i<8;i++){
+        | //-       ctx.fillRect(51+i*16,99,4,4);
+        | //-     }
+
+        | //-     ctx.beginPath();
+        | //-     ctx.moveTo(83,116);
+        | //-     ctx.lineTo(83,102);
+        | //-     ctx.bezierCurveTo(83,94,89,88,97,88);
+        | //-     ctx.bezierCurveTo(105,88,111,94,111,102);
+        | //-     ctx.lineTo(111,116);
+        | //-     ctx.lineTo(106.333,111.333);
+        | //-     ctx.lineTo(101.666,116);
+        | //-     ctx.lineTo(97,111.333);
+        | //-     ctx.lineTo(92.333,116);
+        | //-     ctx.lineTo(87.666,111.333);
+        | //-     ctx.lineTo(83,116);
+        | //-     ctx.fill();
+
+        | //-     ctx.fillStyle = "white";
+        | //-     ctx.beginPath();
+        | //-     ctx.moveTo(91,96);
+        | //-     ctx.bezierCurveTo(88,96,87,99,87,101);
+        | //-     ctx.bezierCurveTo(87,103,88,106,91,106);
+        | //-     ctx.bezierCurveTo(94,106,95,103,95,101);
+        | //-     ctx.bezierCurveTo(95,99,94,96,91,96);
+        | //-     ctx.moveTo(103,96);
+        | //-     ctx.bezierCurveTo(100,96,99,99,99,101);
+        | //-     ctx.bezierCurveTo(99,103,100,106,103,106);
+        | //-     ctx.bezierCurveTo(106,106,107,103,107,101);
+        | //-     ctx.bezierCurveTo(107,99,106,96,103,96);
+        | //-     ctx.fill();
+
+        | //-     ctx.fillStyle = "black";
+        | //-     ctx.beginPath();
+        | //-     ctx.arc(101,102,2,0,Math.PI*2,true);
+        | //-     ctx.fill();
+
+        | //-     ctx.beginPath();
+        | //-     ctx.arc(89,102,2,0,Math.PI*2,true);
+        | //-     ctx.fill();
+        | //-   }
+        | //- }
+
+        | //- | // A utility function to draw a rectangle with rounded corners.
+
+        | //- function roundedRect(ctx,x,y,width,height,radius){
+        | //-   ctx.beginPath();
+        | //-   ctx.moveTo(x,y+radius);
+        | //-   ctx.lineTo(x,y+height-radius);
+        | //-   ctx.quadraticCurveTo(x,y+height,x+radius,y+height);
+        | //-   ctx.lineTo(x+width-radius,y+height);
+        | //-   ctx.quadraticCurveTo(x+width,y+height,x+width,y+height-radius);
+        | //-   ctx.lineTo(x+width,y+radius);
+        | //-   ctx.quadraticCurveTo(x+width,y,x+width-radius,y);
+        | //-   ctx.lineTo(x+radius,y);
+        | //-   ctx.quadraticCurveTo(x,y,x,y+radius);
+        | //-   ctx.stroke();
+        | //- }
+      br
+      img(src='/images/web2/canvas8.png')
+  section
+    section.slide
+      h1 imágenes
+    section.slide
+      h2 Recursos para imágenes
+      ul
+        li HTMLImageElement
+        li HTMLVideoElement
+        li HTMLCanvasElement
+        li ImageBitmap
+    section.slide
+      h2 Creando una imagen desde 0
+      img(src='/images/web2/canvas9.png')
+      h3 Precausión
+      p Es necesario esperar a que la imagen se cargue correctamente
+      img(src='/images/web2/canvas10.png')
+    section.slide
+      h2 Dibujano de la fuente
+      p Una vez la imagen a sido cargada, podemos dibujarla usando drawImage(image, x, y)
+    section.slide
+      h2 Ejemplo
+      img(src='/images/web2/canvas11.png')
+      br
+      img(src='/images/web2/canvas12.png')
+  section
+    section.slide
+      h1 Colores
+    section.slide
+      h2 Aplicado colores
+      ul
+        li fillStyle = color: Indica el estilo a usar al llenar formas
+        li strokeStyle = color: Indica el estilo a usar al delinear formas
+      img(src='/images/web2/canvas13.png')
+    section.slide
+      h2 Práctica
+      p Programe el siguiente ejemplo de fillStyle
+      img(src='/images/web2/canvas14.png')
+    section.slide
+      h2 Práctica
+      p Programe el siguiente ejemplo de strokeStyle
+      img(src='/images/web2/canvas14.png')
+  section(data-background='#cdbfef')
+    section
+      h1 Evaluación Canvas
+    section.slide
+      h2 Reprodusca este ejemplo
+      button#playCanvas Play
+      br
+      canvas#canvas(width='300', height='300')
+  section(data-background='#90bab7')
+    section
+      h1 Web Sockets
+  section
+    section.slide
+      h2 Web Sockets
+      p Tecnología basada en el protocolo WS, que hace posible establecer comunicación continua "full-duplex" entre dos puntos en la web.
+      p un Websocket puede ser cualquier browser y el protocolo es independiente de la plataforma.
+    section.slide
+      h2 Uso
+      ul
+        li Análisis de datos en tiempo real
+        li Mensajes y chat
+        li Colaboración en documentos
+        li Streaming de binarios
+        li Juegos de video multijugador
+    section.slide
+      h2 Disponibilidad
+      p Está disponible en cualquier ambiente con un DOM o alguna implementación del WorkerUtils.
+    section.slide
+      h2 Creando un Websocket
+      p Lo único que hay que hacer es crear un objeto WebSocket. De esta manera se establece comunicación inmediata con el server.
+      img(src='/images/web2/ws1.png')
+      br
+      ul
+        li url: Dirección del servidor a conectar.
+        li protocols: Un string o lista de string indicando los protocolos a usar.
+    section.slide
+      h2 Ejemplos
+      img(src='/images/web2/ws2.png')
+      br
+      img(src='/images/web2/ws3.png')
+    section.slide
+      h2 Enviando datos al server
+      img(src='/images/web2/ws4.png')
+      br
+      br
+      img(src='/images/web2/ws5.png')
+    section.slide
+      h2 Objetos en WebSockets
+      p Usando JSON es posible enviar objetos complejos.
+      img(src='/images/web2/ws6.png')    
+    section.slide
+      h2 Recepción de datos
+      img(src='/images/web2/ws7.png')
+    section.slide
+      h2 Cerrando la conexión
+      img(src='/images/web2/ws8.png')
+    section.slide
+      h2 Ejemplos
+      a(href="http://socket.io/demos/chat/") Chat en linea
+      br
+      a(href="http://socket.io/demos/weplay/") Juego en linea
+      br
+      a(href="http://socket.io/demos/computer/") Conexión remota
+    section.slide
+      h2 ¿Y el Server?
+      p Escuche la explicación del isntructor.
+      a(href="http://socket.ap01.aws.af.cm/") Demo
+  section(data-background='#90bab7')
+    section
+      h1 Web Worker
+  section
+    section.slide
+      h2 ¿Qué es un Web Worker?
+      p Es un JavaScript que se ejecuta en el "background" sin afectar el rendimiento del browser.
+    section.slide
+      h2 Creando un archivo WebWorker
+      img(src='/images/web2/webworker1.png')
+    section.slide
+      h2 Iniciando el WebWorker
+      img(src='/images/web2/webworker2.png')
+    section.slide
+      h2 Detener el WebWorker
+      img(src='/images/web2/webworker3.png')
+      br
+      img(src='/images/web2/webworker4.png')
+    section.slide
+      h2 Práctica
+      p Usando el método "postMessage" y el evento "onmessage", cree un WebWorker que reciba un texto y retorne un número con la cantidad de caracteres.
+      p Puede usar "e.data" para recibir los datos en el evento.
+  section(data-background='#d3ffce')
+    h1 Proyectos
+  section(data-background='#ffcc00')
+    h1 ¡Gracias!
+
 
 
 block append body
-  script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js')
-  // script.
-  //   var name = 'lol';
-  //   var preguntar = true;
-  //   while(preguntar){
-  //     var temp = prompt('lol?');
-  //     if (temp === name) {
-  //       preguntar = false;
-  //     }else{
-  //       preguntar = true;
-  //     };
-  //   };
+  script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js')  
+  script.
+    (function(){      
+      var Canvas = {
+        sun: {},
+        moon: {},
+        earth: {},
+        play: {},
+        init: function(){
+          this.sun = new Image();
+          this.sun.src = 'https://mdn.mozillademos.org/files/1456/Canvas_sun.png';
+          this.moon = new Image();
+          this.moon.src = 'https://mdn.mozillademos.org/files/1443/Canvas_moon.png';
+          this.earth = new Image();
+          this.earth.src = 'https://mdn.mozillademos.org/files/1429/Canvas_earth.png';
+          this.play = document.getElementById('playCanvas');                    
+          this.play.addEventListener("click",this.start.bind(this),false);                    
+        },
+        start: function(){
+          setInterval(this.draw.bind(this),100);
+        },
+        draw: function(){
+          var ctx = document.getElementById('canvas').getContext('2d');
 
+          ctx.globalCompositeOperation = 'destination-over';
+          ctx.clearRect(0,0,300,300); // clear canvas
+
+          ctx.fillStyle = 'rgba(0,0,0,0.4)';
+          ctx.strokeStyle = 'rgba(0,153,255,0.4)';
+          ctx.save();
+          ctx.translate(150,150);
+
+          // Earth
+          var time = new Date();
+          ctx.rotate( ((2*Math.PI)/60)*time.getSeconds() + ((2*Math.PI)/60000)*time.getMilliseconds() );
+          ctx.translate(105,0);
+          ctx.fillRect(0,-12,50,24); // Shadow
+          ctx.drawImage(this.earth,-12,-12);
+
+          // Moon
+          ctx.save();
+          ctx.rotate( ((2*Math.PI)/6)*time.getSeconds() + ((2*Math.PI)/6000)*time.getMilliseconds() );
+          ctx.translate(0,28.5);
+          ctx.drawImage(this.moon,-3.5,-3.5);
+          ctx.restore();
+
+          ctx.restore();
+          
+          ctx.beginPath();
+          ctx.arc(150,150,105,0,Math.PI*2,false); // Earth orbit
+          ctx.stroke();
+         
+          ctx.drawImage(this.sun,0,0,300,300);
+        }
+      };
+      Canvas.init();
+    })();
 

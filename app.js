@@ -21,7 +21,7 @@ app.use(express.logger('dev'));
 app.use(express.bodyParser());
 app.use(express.methodOverride());
 app.use(require('stylus').middleware(__dirname + '/public'));
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, '/public')));
 app.use(express.cookieParser('yaragloriana')); 
 app.use(express.session({ secret: 'yaragloriana', store: store }));
 app.use(app.router);
@@ -39,6 +39,8 @@ app.get('/dotnet', routes.dotnet);
 app.get('/oraclemanager', routes.oraclemanager);
 app.get('/webDotNet', routes.webDotNet);
 app.get('/web', routes.web);
+app.get('/web/products', routes.getproducts);
+app.post('/web/products', routes.postproducts);
 
 app.get('/students', routes.listStudents);
 app.post('/student', routes.addStudent);
