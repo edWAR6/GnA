@@ -31,6 +31,10 @@ exports.web = function(req, res){
   res.render('web2');
 };
 
+exports.webprint = function(req, res){
+  res.render('web3');
+};
+
 exports.getproducts = function(req, res){
   console.log(req.query.name);
   if (req.query.name) {

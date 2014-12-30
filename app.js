@@ -39,6 +39,7 @@ app.get('/dotnet', routes.dotnet);
 app.get('/oraclemanager', routes.oraclemanager);
 app.get('/webDotNet', routes.webDotNet);
 app.get('/web', routes.web);
+app.get('/web/print', routes.webprint);
 app.get('/web/products', routes.getproducts);
 app.post('/web/products', routes.postproducts);
 
